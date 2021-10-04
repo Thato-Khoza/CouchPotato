@@ -69,6 +69,9 @@ body{
     cursor: pointer;
 
 }
+.buttons:hover, .button1:hover{
+    opacity: 70%;
+}
 
 /*footer*/
 footer{
