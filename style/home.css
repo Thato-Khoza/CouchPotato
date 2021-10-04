@@ -67,3 +67,16 @@ input{
     color: white;
     padding: 100px;
 }
+
+/*Popular movies section*/
+
+.popularMovies{
+    margin-top: 50px;
+}
+
+/*Review Section*/
+
+.reviews{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
