@@ -1,5 +1,5 @@
 *{
-    margin: 0; 
+    margin: 0 auto; 
 }
 
 /*Fonts*/
@@ -7,7 +7,12 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
 }
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 
+/*container*/
+.container-fluid {width:100%;max-width:none ;padding-left:0;padding-right:0}
 
 /*Navigation*/
 /*Header*/
@@ -42,6 +47,16 @@ h1{
      margin-left:100px;
  }
  
+ /*Buttons*/
+ .button1{
+     background-color: #5D5FEF;
+     color: white;
+     border-radius: 20px;
+     text-align: center;
+     width: 200px;
+     padding:10px;
+     cursor: pointer;
+ }
 
 /*footer*/
 footer{

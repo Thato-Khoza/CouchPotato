@@ -23,6 +23,7 @@
 
         <!--CSS-->
         <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/home.css">
 
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
@@ -33,18 +34,53 @@
     <body>
 
     <div class="container-fluid"><!--primary container that holds everything-->
-        <div class="header">
-            <div class="logo"><img src="img/logo.png"></div>
-                <div class="nav-container">
-                    
-                        <ul class="list">
-                        <!--nav-->
-                            <a href="index.html"><li class="active">Home</li></a>
-                            <a href="pages/movieLibrary.html"><li>Library</li></a>
-                            <a href="pages/watchLater.html"><li>Watch Later</li></a>          
-                        </ul>  
-                </div>
-        </div>
+        <div class = "row">
+            <div class="col-md-12 col-sm-12 col-12 one d-sm-block d-none">
+                <div class="header">
+                    <div class="logo"><img src="img/logo.png"></div>
+                        <div class="nav-container">
+                            
+                                <ul class="list">
+                                <!--nav-->
+                                    <a href="index.html"><li class="active">Home</li></a>
+                                    <a href="pages/movieLibrary.html"><li>Library</li></a>
+                                    <a href="pages/watchLater.html"><li>Watch Later</li></a>          
+                                </ul>  
+                        </div> <!--nav-container-->
+                </div> <!--header-->
+            </div><!--col-->
+        </div> <!--row-->
+
+        <div class = "row">
+            <div class="col-md-6" headerText>
+                <div class="headerTextBox">
+                    <h1>Welcome!</h1>
+                    <p> Here at Couch Potato, we aim to provide the best movies, in the comfort of your own home! So sit back, relax, and enjoy your cinema from home!</p>
+                    <div class="search"><img src="img/Other/search_icon.svg"/><input type="text" placeholder="Search..."/></div>
+                </div><!--headerTextBox-->
+            </div><!--col-->
+            <div class="col-md-6">
+                <img src="img/coupleOnCouch.png" class="coupleOnCouch">
+            </div><!--col-->
+        </div><!--row-->
+
+        <div class = "row about">
+            <div class="col-md-6 d-md-block d-sm-none d-none" about>
+                    <img src="img/mockUp.png" class="mockUp">
+                </div><!--col-->
+                <div class="col-md-6 col-sm-12 d-sm-block d-none" abouttext>
+                <div class="aboutTextBox">
+                    <h1>About!</h1>
+                    <p> CouchPotato was established in 2015 by couch potatos, for couch potatoes. The aim of our company was to create a at home cinema for those who need some relaxation time at home, allowing people to watch their favourite movies from the comfort of their own home. </p>
+                    <p>Through the years we have perfected this online streaming site, ensuring the best possible user experience!</p> 
+                    </p>
+                    <br/>
+                    <div class="button1">Discover ></div>
+                </div><!--aboutTextBox-->
+            </div><!--col-->
+            
+        </div><!--row-->
+        
       
        
         
@@ -54,13 +90,25 @@
 
     </body>
 
-       <!--Footer-->           
-       <footer>
-        <p>COUCHPOTATO@2021</p>
-         <a href="https://www.facebook.com/" target="_blank"> <img src="img/social/facebook_icon.svg" alt="facebook logo"/></a>
-         <a href="https://www.instagram.com/" target="_blank"><img src="img/social/instagram_icon.svg" alt="instagram logo"/></a>
-         <a href="https://twitter.com/" target="_blank"><img src="img/social/twitter_icon.svg" alt="twitter logo"/></a>
-    </footer>
+       <!--Footer-->     
+       <div class="container-fluid"><!--primary container that holds everything-->
+        <div class = "row">
+            <div class="col-md-12 col-sm-12 col-12 d-sm-block d-none footerlinks">      
+                <footer>
+                    <p>COUCHPOTATO@2021</p>
+                    <a href="https://www.facebook.com/" target="_blank"> <img src="img/social/facebook_icon.svg" alt="facebook logo"/></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/social/instagram_icon.svg" alt="instagram logo"/></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="img/social/twitter_icon.svg" alt="twitter logo"/></a>
+                </footer>
+            </div><!--col-->
+
+            <div class="d-block d-sm-none col-12 footerNav">      
+                <footer>
+                    <!--insert navigation items here-->
+                    <p>HERE IS THE OTHER NAV</p>
+                </footer>
+            </div><!--col-->
+        </div> <!--row-->
 
     <!-- Add jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
