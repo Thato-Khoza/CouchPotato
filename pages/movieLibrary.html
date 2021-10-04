@@ -32,41 +32,55 @@
     </head>
     <body>
 
-    <div class="container-fluid"><!--primary container that holds everything-->
-        <div class="header">
-            <div class="logo"><img src="../img/logo.png"></div>
-                <div class="nav-container">
-                    
-                        <ul class="list">
-                        <!--nav-->
-                            <a href="../index.html"><li>Home</li></a>
-                            <a href="movieLibrary.html"><li class="active">Library</li></a>
-                            <a href="watchLater.html"><li>Watch Later</li></a>          
-                        </ul>  
-                </div>
-        </div>
-      
-       
+        <div class="container-fluid"><!--primary container that holds everything-->
+            <div class = "row">
+                <div class="col-md-12 col-sm-12 col-12 one d-sm-block d-none">
+                    <div class="header">
+                        <div class="logo"><img src="../img/logo.png"></div>
+                            <div class="nav-container">
+                                
+                                    <ul class="list">
+                                    <!--nav-->
+                                        <a href="../index.html"><li>Home</li></a>
+                                        <a href="movieLibrary.html"><li class="active">Library</li></a>
+                                        <a href="watchLater.html"><li>Watch Later</li></a>          
+                                    </ul>  
+                            </div> <!--nav-container-->
+                    </div> <!--header-->
+                </div><!--col-->
+            </div> <!--row-->
+    
         
 
         
     </div><!--container-->
 
     </body>
+       <!--Footer-->     
+       <div class="container-fluid"><!--primary container that holds everything-->
+        <div class = "row">
+            <div class="col-md-12 col-sm-12 col-12 d-sm-block d-none footerlinks">      
+                <footer>
+                    <p>COUCHPOTATO@2021</p>
+                    <a href="https://www.facebook.com/" target="_blank"> <img src="../img/social/facebook_icon.svg" alt="facebook logo"/></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/social/instagram_icon.svg" alt="instagram logo"/></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="../img/social/twitter_icon.svg" alt="twitter logo"/></a>
+                </footer>
+            </div><!--col-->
 
-       <!--Footer-->           
-       <footer>
-        <p>COUCHPOTATO@2021</p>
-         <a href="https://www.facebook.com/" target="_blank"> <img src="../img/social/facebook_icon.svg" alt="facebook logo"/></a>
-         <a href="https://www.instagram.com/" target="_blank"><img src="../img/social/instagram_icon.svg" alt="instagram logo"/></a>
-         <a href="https://twitter.com/" target="_blank"><img src="../img/social/twitter_icon.svg" alt="twitter logo"/></a>
-    </footer>
+            <div class="d-block d-sm-none col-12 footerNav">      
+                <footer>
+                    <!--insert navigation items here-->
+                    <p>HERE IS THE OTHER NAV</p>
+                </footer>
+            </div><!--col-->
+        </div> <!--row-->
 
-    <!-- Add jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Add jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!--Link to javascript file-->
-        <script src="../js/index.js"></script>
-        <script src="../js/data.js"></script>
-        </body>
+<!--Link to javascript file-->
+    <script src="../js/index.js"></script>
+    <script src="../js/data.js"></script>
+    </body>
 </html>
