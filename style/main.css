@@ -1,0 +1,67 @@
+*{
+    margin: 0; 
+}
+
+/*Fonts*/
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+
+/*Navigation*/
+/*Header*/
+.logo img{
+    width: 80px;
+    margin-left:80px;
+    margin-top: 15px;
+ }
+  
+ .header a, .header li {
+     font-family: 'Inter', sans-serif;
+     color: #2b2b2b;
+     text-decoration: none;
+     list-style-type: none;
+     display: inline;
+     padding-left: 30px;
+ }
+ .header .list{
+     display: inline;
+ }
+ 
+ .header li:hover{
+     color: #5D5FEF;
+ }
+ .header a:hover{
+    text-decoration: none;
+}
+ 
+ .nav-container{
+     padding:20px;
+     margin-top: -60px;
+     margin-left:100px;
+ }
+ 
+
+/*footer*/
+footer{
+    margin-top: auto;
+    padding: 20px;
+    padding-left: 50px;
+    background-color: #2b2b2b;
+}
+
+footer p{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+footer img{
+    float:right;
+    width: 50px;
+    padding: 10px;
+
+    
+}
