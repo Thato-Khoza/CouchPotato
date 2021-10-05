@@ -69,6 +69,10 @@ input{
     padding: 100px;
 }
 
+.about .button1{
+    margin-left: -3px;
+}
+
 /*Popular movies section*/
 
 .popularMovies{
