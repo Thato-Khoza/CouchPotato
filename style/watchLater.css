@@ -1,9 +1,9 @@
 
 /* WATCH LATER HEADING STYLING */
-.rowHeader{
+/* .row{
     width: 800px;
     margin: 0 auto;
-}
+} */
 
 .row .watchLaterHeading{
     padding: 30px;
@@ -11,6 +11,8 @@
 
 
 .textWatchLater{
+    width: 800px;
+    margin: 0 auto;
     padding: 100px;
     text-align: center;
 }
@@ -53,4 +55,12 @@ input{
 .search img{
     height: 25px;
     margin-left: 10px;
+}
+
+/* WATCH LATER MOVIES STYLING */
+
+/* watch later movie heading and buttons */
+.watchLaterMovies{
+    margin-top: 50px;
+    padding: 50px;
 }
