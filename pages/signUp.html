@@ -23,6 +23,7 @@
 
         <!--CSS-->
         <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/signUp.css">
 
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
@@ -31,11 +32,32 @@
 
     </head>
     <body>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container"><!--primary container that holds everything-->
 
-    <div class="container-fluid"><!--primary container that holds everything-->
-       
+                        <div class="left Appear"> <h3 class="leftBtn">Log In</h3>
+                            <br>
+                            <input type="text" placeholder="Username"/>
+                            <input type="text" placeholder="Password"/>
+
+                        </div><!--left-->
+                        <div class="right disAppear"><h3 class="rightBtn">Sign Up</h3> 
+                            <br>
+                            <input type="text" placeholder="First Name"/>
+                            <input type="text" placeholder="Last Name"/>
+                            <input type="text" placeholder="Email"/>
+                            <input type="text" placeholder="Password"/>
+
+                        </div><!--right-->
+                        <div class="panel"><div class="btn">About Couch Potato</div></div><!--panel-->
+
+
+                    </div><!--container end-->
+                </div><!--col end-->
+            </div><!--row end-->
+
         
-    </div><!--container-->
 
     </body>
 
@@ -46,5 +68,6 @@
     <!--Link to javascript file-->
         <script src="../js/index.js"></script>
         <script src="../js/data.js"></script>
+        <script src="../js/functions.js"></script>
         </body>
 </html>
