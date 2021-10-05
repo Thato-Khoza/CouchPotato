@@ -1,0 +1,28 @@
+.Block {
+    width: 0 auto;
+    height: 200px;
+    background-color:rgb(53, 53, 53);
+}
+
+.blockBottom {
+    width: 0 auto;
+    height: 400px;
+    background-color: white;
+}
+
+
+/*Media Q = md + sm screen */
+@media screen and (min-width: 768px) {
+    .blockBottom {
+      background-color: white;
+      height: 400px;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .blockBottom {
+        background-color: white !important;
+        height: 200px; 
+    } 
+  }
+  
