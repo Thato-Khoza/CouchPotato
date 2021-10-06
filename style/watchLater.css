@@ -1,17 +1,17 @@
 
 /* WATCH LATER HEADING STYLING */
-/* .row{
-    width: 800px;
-    margin: 0 auto;
-} */
 
 .row .watchLaterHeading{
-    padding: 30px;
+    padding: 50px;
 }
 
+.row h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 52px;
+}
 
 .textWatchLater{
-    width: 800px;
     margin: 0 auto;
     padding: 100px;
     text-align: center;
