@@ -92,3 +92,52 @@ select{
 
 }
 
+/*movie card*/
+.movieCard{
+    width: 286px;
+    height: 350px;
+   
+    border-radius: 20px;
+    box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+  }
+
+  /*heart icon*/
+  .divheart{
+      width: 60px;
+      float: right;
+      margin-top: 10px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+
+  .hover-text{
+     padding-top: 90px;
+  }
+
+  .row h6{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    
+}
+.row h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.movieButton{
+    
+    width: 170px;
+  border-radius: 25px;
+    font-size: 14px;
+    margin-top: 15px;
+    
+}
+
+
+

@@ -68,7 +68,19 @@ body{
      width: 200px;
      padding:10px;
      cursor: pointer;
+     border: 2px solid #5D5FEF;
  }
+ .button2{
+    background-color: #ffffff;
+    color: #5D5FEF;
+    border-radius: 20px;
+    border: 2px solid #5D5FEF;
+    text-align: center;
+    width: 200px;
+    padding:10px;
+    cursor: pointer;
+}
+
 
  .buttons{
     width: 80px;
