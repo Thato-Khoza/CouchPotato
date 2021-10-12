@@ -96,10 +96,24 @@ select{
 }
 
 /*movie card*/
+.center{
+width: 60%;
+height: 350px;
+margin: auto;
+overflow-x: hidden;
+overflow-y: hidden;
+white-space: nowrap;
+}
+
 .movieCard{
     width: 286px;
     height: 350px;
-   
+
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    /* vertical-align: center; */
+
     border-radius: 20px;
     box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
     -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);

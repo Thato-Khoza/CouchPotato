@@ -40,10 +40,29 @@ $.getJSON(URL,function(result){
             )
         }
     }
+  
+for(i=0; i < 10; i++){
+        $(".movieCard").append(
 
+            "<img class='movieImg' src=''/>\
+                <div class='overlayBlock'>\
+                    <div class='divheart'>\
+                        <img src='../img/other/heart_icon.svg'/>\
+                        </div>\
+                           <div class='overlay'>\
+                               <div class='hover-text'>\
+                                   <h6>Movie Name</h6>\
+                                   <h5>Rating</h5>\
+                                <div class='button1 movieButton'>Discover</div>\
+                            <div class='button2 movieButton'>Watch Later</div>\
+                        </div>\
+                    </div>\
+                </div>"
+        )
+    }
 
+}); //for(movie card repetition)
 
-});
 
 
     
