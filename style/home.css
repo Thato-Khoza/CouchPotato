@@ -19,6 +19,7 @@
     font-size: 42px;
 }
 
+
 .headerTextBox{
     padding: 100px;
 }
@@ -104,12 +105,17 @@ input{
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-    h1{
-        font-size: 48px;
+    .row h1{
+        font-size: 42px;
         text-align: center;
     
     }
-    p{
+    .row h2{
+        font-size: 36px;
+        text-align: center;
+    
+    }
+    .row p{
         font-size: 14px;
         text-align: center;
     }
@@ -123,39 +129,37 @@ input{
         border-radius: 30px;
         padding: 30px;
         padding-bottom: 60px;
+        width: 500px;
     }
 
     .search{
         color: #ffffff; 
         background-color: #2b2b2b;
-        width: 327px;
-        border-radius: 30px;
-        float: left;
-        margin-left: 40px;
+        margin-left: 60px;
     }
     
     .search input, .search input:active, .search input:hover ,select, [type="text"]{
         color:#ffffff;
         background-color: #2b2b2b;
-        height:40px;
-        margin-right: 30px;
-        outline: none;
-        cursor: pointer;
-        outline: none;
-        border: none;
+        
     
     }
 
    
 
     .aboutTextBox .button1{
-        margin-left: 100px;
+        margin: 0 auto;
     }
 
     footer{
         padding-left: 0px;
         margin-left: -300px;
  
+    }
+
+    .aboutTextBox{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
@@ -175,13 +179,19 @@ input{
         padding: 0px;
         padding-bottom: 0px;
     }
-    h1{
-        font-size: 28px;
+    .row h1{
+        font-size: 38px;
         text-align: left;
     }
-    p{
+    .row h2{
+        font-size: 32px;
+        text-align: left;
+    }
+    .row p{
         font-size: 12px;
         text-align: left;
+        width: 400px;
+        margin-left: 0px;
     }
     .search{
         margin-left: 0px;

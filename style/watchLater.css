@@ -64,3 +64,62 @@ input{
     margin-top: 50px;
     padding: 50px;
 }
+
+
+/*Media Query*/
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+   
+    .row h1{
+        font-size: 42px;
+        text-align: center;
+    
+    }
+    .row h2{
+        font-size: 36px;
+        text-align: center;
+    
+    }
+    .row p{
+        font-size: 14px;
+        text-align: center;
+    }
+    footer{
+        padding-left: 0px;
+        margin-left: -300px;
+ 
+    }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 500px){
+
+    .row h1{
+        font-size: 38px;
+        text-align: left;
+    }
+    .row h2{
+        font-size: 32px;
+        text-align: left;
+    }
+    p{
+        font-size: 12px;
+        text-align: left;
+    }
+    .search{
+        color: #ffffff; 
+        background-color: #2b2b2b;
+       
+    }
+    
+    .search input, .search input:active, .search input:hover ,select, [type="text"]{
+        color:#ffffff;
+        background-color: #2b2b2b;
+        
+    
+    }
+
+
+  
+}

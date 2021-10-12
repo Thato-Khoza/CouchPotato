@@ -82,8 +82,11 @@ select{
     padding-left:15px;
     border: 1px solid #2b2b2b;
    float: right;
-   
-   
+     
+}
+#ratingCheck {
+    word-wrap: normal;
+    margin-left: 20px;
 }
 
 .selectBox{
@@ -139,5 +142,83 @@ select{
     
 }
 
+/*Media Query*/
+/*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .row h1{
+        font-size: 48px;
+        text-align: center;
+    
+    }
+
+    .row h2{
+        font-size: 36px;
+        text-align: center;
+    
+    }
+
+    .row p{
+        font-size: 14px;
+        text-align: center;
+    }
+    footer{
+        padding-left: 0px;
+        margin-left: -300px;
+ 
+    }
+    
+    #ratingCheck {
+        width: 150px;
+        float: left;
+        margin-left: 130px;
+    }
+    #year{
+        width: 150px;
+        float: left;
+        margin-left: 10px;
+    }
+    .filters{
+        margin: 0 auto;
+    }
+    
+}
+
+/*Mobile*/
+@media only screen and (max-width: 500px){
+
+    .row h1{
+        font-size: 38px;
+        text-align: left;
+    }
+    .row h2{
+        font-size: 32px;
+        text-align: left;
+    }
+    .row p{
+        font-size: 12px;
+        text-align: left;
+    }
+    #ratingCheck {
+        font-size: 12px;
+        width: 130px;
+        margin-left: 0px;
+        
+    }
+    #year{
+        width: 130px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .search{
+        
+        width: 320px;
+       margin-top: 10px;
+        float: left;
+        
+        
+    }
+  
+}
 
 
