@@ -11,10 +11,9 @@ $.getJSON(URL,function(result){
 
     //insert comedy row
     for(i=0;i<result.length;i++){
-        if(result[i].genres[0].name == "Comedy"){
+        
 
-
-            $('.row movie-insert comedy').append(
+            $('.row.movie-insert.comedy').append(
 
                 "<div class = 'col-md-4 col-sm-6 col-12'>\
                 <div class='movieCard'>\
@@ -25,7 +24,7 @@ $.getJSON(URL,function(result){
                         </div><!--divheart-->\
                         <div class='overlay'>\
                             <div class='hover-text'>\
-                                <h6>"+ result[i].original_title+"</h6>\
+                                <h6>" + result[i].original_title + "</h6>\
                                 <h5>Rating</h5>\
                                 <div class='button1 movieButton'>Discover</div>\
                                 <div class='button2 movieButton'>Watch Later</div>\
@@ -38,7 +37,7 @@ $.getJSON(URL,function(result){
 
 
             )
-        }
+        
     }
   
 for(i=0; i < 10; i++){
