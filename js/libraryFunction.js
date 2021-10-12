@@ -41,9 +41,10 @@ $.getJSON(URL,function(result){
     }
   
 for(i=0; i < 10; i++){
-        $(".movieCard").append(
+        $(".row.movie-insert.comedy").append(
 
-            "<img class='movieImg' src=''/>\
+            "<div class='movieCard'>\
+            <img class='movieImg' src=''/>\
                 <div class='overlayBlock'>\
                     <div class='divheart'>\
                         <img src='../img/other/heart_icon.svg'/>\
@@ -56,6 +57,7 @@ for(i=0; i < 10; i++){
                             <div class='button2 movieButton'>Watch Later</div>\
                         </div>\
                     </div>\
+                </div>\
                 </div>"
         )
     }
