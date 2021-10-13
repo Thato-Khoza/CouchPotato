@@ -257,6 +257,16 @@ img {
   cursor: pointer;
 }
 
+.login-media {
+  margin-top: 32px;
+}
+
+.login-media-icon {
+  font-size: 24px;
+  color: #23004d;
+  margin: 0 24px;
+}
+
 .block {
   display: block;
 }
