@@ -1,4 +1,4 @@
-.container{
+/*.container{
     width: 80%;
     height: 60vh;
     background-color: white;
@@ -78,13 +78,13 @@ input{
 
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .panel {
       display: none;
     }
   }
 
-  @media screen and (max-width: 600px) {
+  /*@media screen and (max-width: 600px) {
     .container {
       background-color: white;
       box-shadow: none;
@@ -93,4 +93,37 @@ input{
     }.disAppear {
         display: none;
     }
+  }*/
+
+:root {
+  --colour-one: #9d4bff;
+  --colour-one-dark: #23004d;
+  --colour-one-light: #a49eac;
+  --colour-one-lightest: #f2f2f2;
+
+  --font: "Open Sans", sans-serif;
+  --size-h1-font: 16px;
+  --medium-font-size: 15px;
+  --small-font: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --medium-font-size: 16px;
+    --small-font: 14px;
   }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #23004d;
+}
