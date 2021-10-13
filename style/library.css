@@ -96,55 +96,48 @@ select{
 }
 
 /*movie card*/
-/* .center{
-
-} */
-.movieList{
-    width: 1500px;
-    height: 450px;
-    margin-left: 100px;
-    overflow: hidden;
-    position: relative;
-}
-
 .movie-insert{
-/* width: 10000px; */
-height: 350px;
-margin: 10px auto;
-display: inline;
-overflow-x: auto;
-float: left;
-}
-.movie-insert::-webkit-scrollbar{
-    visibility: hidden;
-}
-
-.buttons{
-    position: absolute;
-    margin-top: 135px;
-}
-[src="../img/other/left_arrow_icon.svg"]{
-    margin-left: 20px;
-}
-
-[src="../img/other/right_arrow_icon.svg"]{
-    margin-left: 1400px;
-}
-
-
-.movieCard{
-    width: 286px;
-    height: 350px;
-    position: relative;
-    left: 0;
-    transition: 0.5s;
-    /* display: inline; */
+    width: 1500px;
+    height: 370px;
+    margin: 100px auto;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-appearance: none;
+    appearance: none;
+    white-space: nowrap;
     /* float: left; */
-    border-radius: 20px;
-    box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-    -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-    -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-  }
+    }
+    .movie-insert::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    
+    .buttons{
+        position: absolute;
+        margin-top: 235px;
+    }
+    [src="../img/other/left_arrow_icon.svg"]{
+        margin-left: 20px;
+    }
+    
+    [src="../img/other/right_arrow_icon.svg"]{
+        margin-left: 1400px;
+    }
+    
+
+
+    .movieCard{
+        width: 286px;
+        height: 350px;
+        display: inline-block;
+        /* transition: 0.5s; */
+        border-radius: 20px;
+        
+        box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+        -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+        -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+      }
 
   /*heart icon*/
   .divheart{
