@@ -1,217 +1,205 @@
 /*Header*/
-.coupleOnCouch{
-    width: 500px ;
+.coupleOnCouch {
+  width: 500px;
 }
 
-.row .headerText{
-    padding: 50px;
+.row .headerText {
+  padding: 50px;
 }
 
-.row h1{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 52px;
+.row h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 52px;
 }
 
-.row h2{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    font-size: 42px;
+.row h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 42px;
 }
 
-
-.headerTextBox{
-    padding: 100px;
+.headerTextBox {
+  padding: 100px;
 }
 
 /*search input*/
-.search{
-    color: #2b2b2b; 
-    background-color: #ECEBEF;
-    width: 327px;
-    border-radius: 30px;
-    float: left;
+.search {
+  color: #2b2b2b;
+  background-color: #ecebef;
+  width: 327px;
+  border-radius: 30px;
+  float: left;
 }
 
-.search input, .search input:active, .search input:hover ,select, [type="text"]{
-    color:#2b2b2b;
-    background-color: #ECEBEF;
-    height:40px;
-    margin-right: 30px;
-    outline: none;
-    cursor: pointer;
-    outline: none;
-    border: none;
-
+.search input,
+.search input:active,
+.search input:hover,
+select,
+[type="text"] {
+  color: #2b2b2b;
+  background-color: #ecebef;
+  height: 40px;
+  margin-right: 30px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
-[placeholder="Search..."]{
-    padding-left: 15px;
- 
+[placeholder="Search..."] {
+  padding-left: 15px;
 }
 
-.search img{
-    height: 25px;
-    margin-left: 10px;
-
+.search img {
+  height: 25px;
+  margin-left: 10px;
 }
-input{
-
-    width: 70%;
+input {
+  width: 70%;
 }
-.search input{
-    outline: none;
-    border: none;
+.search input {
+  outline: none;
+  border: none;
 }
 
 /*About Section*/
-.mockUp{
-    width: 600px;
+.mockUp {
+  width: 600px;
 }
 
-.about{
-    background-color: #2b2b2b;
-    margin-top: 100px;
+.about {
+  background-color: #2b2b2b;
+  margin-top: 100px;
 }
 
-.aboutTextBox{
-    color: white;
-    padding: 100px;
+.aboutTextBox {
+  color: white;
+  padding: 100px;
 }
 
-.about .button1{
-    margin-left: -3px;
+.about .button1 {
+  margin-left: -3px;
 }
 
 /*Popular movies section*/
 
-.popularMovies{
-    margin-top: 50px;
+.popularMovies {
+  margin-top: 50px;
 }
 
 /*Review Section*/
 
-.reviews{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.reviews {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*button link*/
 
-.aboutTextBox a:hover{
-    text-decoration: none;
+.aboutTextBox a:hover {
+  text-decoration: none;
 }
 
 /*Media Query*/
 /*tablet*/
-@media only screen and (min-width: 481px) and (max-width: 768px){
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .row h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+  .row h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .row p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .headerTextBox {
+    background-image: url(../img/coupleOnCouch.png);
+    background-size: cover;
+  }
+  .textBlock {
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    padding-bottom: 60px;
+    width: 500px;
+  }
 
-    .row h1{
-        font-size: 42px;
-        text-align: center;
-    
-    }
-    .row h2{
-        font-size: 36px;
-        text-align: center;
-    
-    }
-    .row p{
-        font-size: 14px;
-        text-align: center;
-    }
-    .headerTextBox{
-        background-image: url(../img/coupleOnCouch.png);
-        background-size:cover;
-    }
-    .textBlock{
-        
-        background-color: white;
-        border-radius: 30px;
-        padding: 30px;
-        padding-bottom: 60px;
-        width: 500px;
-    }
+  .search {
+    color: #ffffff;
+    background-color: #2b2b2b;
+    margin-left: 60px;
+  }
 
-    .search{
-        color: #ffffff; 
-        background-color: #2b2b2b;
-        margin-left: 60px;
-    }
-    
-    .search input, .search input:active, .search input:hover ,select, [type="text"]{
-        color:#ffffff;
-        background-color: #2b2b2b;
-        
-    
-    }
+  .search input,
+  .search input:active,
+  .search input:hover,
+  select,
+  [type="text"] {
+    color: #ffffff;
+    background-color: #2b2b2b;
+  }
 
-   
+  .aboutTextBox .button1 {
+    margin: 0 auto;
+  }
 
-    .aboutTextBox .button1{
-        margin: 0 auto;
-    }
+  footer {
+    padding-left: 0px;
+    margin-left: -300px;
+  }
 
-    footer{
-        padding-left: 0px;
-        margin-left: -300px;
- 
-    }
-
-    .aboutTextBox{
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+  .aboutTextBox {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 /*Mobile*/
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
+  .headerTextBox {
+    background-image: none;
+    padding: 100px;
+    padding-top: 50px;
+  }
+  .textBlock {
+    margin-left: -60px;
+    background-color: none;
+    border-radius: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+  .row h1 {
+    font-size: 38px;
+    text-align: left;
+  }
+  .row h2 {
+    font-size: 32px;
+    text-align: left;
+  }
+  .row p {
+    font-size: 12px;
+    text-align: left;
+    width: 400px;
+    margin-left: 0px;
+  }
+  .search {
+    margin-left: 0px;
+  }
 
-    .headerTextBox{
-        background-image: none;
-        padding: 100px;
-        padding-top: 50px;
-       
-    }
-    .textBlock{
-        margin-left: -60px;
-        background-color: none;
-        border-radius: 0px;
-        padding: 0px;
-        padding-bottom: 0px;
-    }
-    .row h1{
-        font-size: 38px;
-        text-align: left;
-    }
-    .row h2{
-        font-size: 32px;
-        text-align: left;
-    }
-    .row p{
-        font-size: 12px;
-        text-align: left;
-        width: 400px;
-        margin-left: 0px;
-    }
-    .search{
-        margin-left: 0px;
-    }
+  .popularMovies {
+    margin-top: 10px;
+  }
 
-    .popularMovies{
-        margin-top: 10px;
-    }
-    
-    /*Review Section*/
-    
-    .reviews{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .about{
-        margin-bottom: -90px;
-      
-    }
-    
-    
-  
+  /*Review Section*/
+
+  .reviews {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about {
+    margin-bottom: -90px;
+  }
 }
