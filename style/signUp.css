@@ -195,6 +195,11 @@ img {
   border-radius: 8px;
 }
 
+.login-icon {
+  font-size: 24px;
+  color: #9d4bff;
+}
+
 .login-input {
   border: none;
   outline: none;
