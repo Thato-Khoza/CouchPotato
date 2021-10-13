@@ -141,6 +141,11 @@ img {
   height: auto;
   display: block;
 }
+.login-img{
+    background-image: url(../img/coupleOnCouch2.png);
+    background-size:contain;
+    box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+}
 
 /*login */
 
