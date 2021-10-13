@@ -141,3 +141,70 @@ img {
   height: auto;
   display: block;
 }
+
+/*login */
+
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.login-info {
+  display: grid;
+}
+
+.login-img {
+  justify-self: center;
+}
+
+.login-img img {
+  width: 310px;
+  margin-top: 24px;
+}
+
+.forms {
+  position: relative;
+  height: 368px;
+}
+
+.login-sheet,
+.login-sheet-2 {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 32px 16px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35, 0, 77, 0.2);
+}
+
+.login-heading {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 8px;
+  padding: 20px 16px;
+  background-color: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+.login-input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #23004d;
+}
+
+.login-input::placeholder {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #a49eac;
+}
