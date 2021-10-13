@@ -96,24 +96,50 @@ select{
 }
 
 /*movie card*/
-.center{
-width: 60%;
-height: 350px;
-margin: auto;
-overflow-x: hidden;
-overflow-y: hidden;
-white-space: nowrap;
+/* .center{
+
+} */
+.movieList{
+    width: 1500px;
+    height: 450px;
+    margin-left: 100px;
+    overflow: hidden;
+    position: relative;
 }
+
+.movie-insert{
+/* width: 10000px; */
+height: 350px;
+margin: 10px auto;
+display: inline;
+overflow-x: auto;
+float: left;
+}
+.movie-insert::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.buttons{
+    position: absolute;
+    margin-top: 135px;
+}
+[src="../img/other/left_arrow_icon.svg"]{
+    margin-left: 20px;
+}
+
+[src="../img/other/right_arrow_icon.svg"]{
+    margin-left: 1400px;
+}
+
 
 .movieCard{
     width: 286px;
     height: 350px;
-
-    display: inline;
-    float: left;
-    margin-left: 15px;
-    /* vertical-align: center; */
-
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    /* display: inline; */
+    /* float: left; */
     border-radius: 20px;
     box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
     -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);

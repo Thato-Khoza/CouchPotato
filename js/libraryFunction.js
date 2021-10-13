@@ -39,12 +39,15 @@ $.getJSON(URL,function(result){
             )
         
     }
+
+    
   
 for(i=0; i < 10; i++){
-        $(".row.movie-insert.comedy").append(
+        $(".row.movie-insert").append(
 
-            "<div class='movieCard'>\
-            <img class='movieImg' src=''/>\
+        "<div class = 'col-md-4 col-sm-6 col-12'>\
+        <div class='movieCard' id='movieCardSlide'>\
+                <img class='movieImg' src=''/>\
                 <div class='overlayBlock'>\
                     <div class='divheart'>\
                         <img src='../img/other/heart_icon.svg'/>\
@@ -58,13 +61,19 @@ for(i=0; i < 10; i++){
                         </div>\
                     </div>\
                 </div>\
-                </div>"
+        </div>\
+        </div>"
         )
-    }
+    } //for loop(movie card repetition)
+    
 
-}); //for(movie card repetition)
+}); 
 
 
+//on click button slider code
+
+// var span = document.getElementsByTagName('img')
+// var movie = document.getElementBy
 
     
 });
