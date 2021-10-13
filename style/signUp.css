@@ -214,11 +214,20 @@ img {
   color: #a49eac;
 }
 
+.login-frgt {
+  display: block;
+  width: max-content;
+  margin-top: 8px;
+  margin-left: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #a49eac;
+}
+
 .login-btn {
   display: block;
   padding: 16px;
-  margin-top: 32px;
-  margin-bottom: 10px;
+  margin: 32px 0;
   background-color: #9d4bff;
   color: #fff;
   font-weight: 600;
