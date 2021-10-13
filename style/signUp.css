@@ -308,7 +308,7 @@ img {
     height: 100vh;
     overflow: hidden;
   }
-}
+
 
 .login-info {
   grid-template-columns: repeat(2, max-content);
@@ -342,4 +342,5 @@ img {
 
 .login-sheet-2 {
   bottom: -88px;
+}
 }
