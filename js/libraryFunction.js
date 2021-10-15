@@ -65,9 +65,35 @@ for(i=0; i < 10; i++){
     } //for loop(movie card repetition)
     
 //on click button slider code
+//COMEDY
+$("#rightArrowComedy").click(function () { 
+    $('.movieList').scrollLeft($('.movieList').scrollLeft() + 350);
+});
 
-// var span = document.getElementsByTagName('img')
-// var movie = document.getElementBy
+ $("#leftArrowComedy").click(function () { 
+    $('.movieList').scrollLeft($('.movieList').scrollLeft() - 350);
+});
+
+//ACTION
+$("#rightArrowAction").click(function () { 
+    $('.movieList').scrollLeft($('.movieList').scrollLeft() + 350);
+});
+
+ $("#leftArrowAction").click(function () { 
+    $('.movieList').scrollLeft($('.movieList').scrollLeft() - 350);
+});
+
+//HORROR
+$("#rightArrowHorror").click(function () { 
+    $('.movieList').scrollLeft($('.movieList').scrollLeft() + 350);
+});
+
+ $("#leftArrowHorror").click(function () { 
+    $('.movieList').scrollLeft($('.movieList').scrollLeft() - 350);
+});
+
+
+
 
 });     
 });
