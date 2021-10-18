@@ -43,7 +43,7 @@ $.getJSON(URL,function(result){
     
   
 for(i=0; i < 10; i++){
-        $(".row.movie-insert").append(
+        $(".movie-insert").append(
 
         "<div class='movieCard' id='movieCardSlide'>\
                 <img class='movieImg' src=''/>\
@@ -65,36 +65,33 @@ for(i=0; i < 10; i++){
     } //for loop(movie card repetition)
     
 //on click button slider code
-//COMEDY
-$("#rightArrowComedy").click(function () { 
-    $('.movieList').scrollLeft($('.movieList').scrollLeft() + 350);
-});
-
- $("#leftArrowComedy").click(function () { 
-    $('.movieList').scrollLeft($('.movieList').scrollLeft() - 350);
-});
-
-//ACTION
-$("#rightArrowAction").click(function () { 
-    $('.movieList').scrollLeft($('.movieList').scrollLeft() + 350);
-});
-
- $("#leftArrowAction").click(function () { 
-    $('.movieList').scrollLeft($('.movieList').scrollLeft() - 350);
-});
-
-//HORROR
-$("#rightArrowHorror").click(function () { 
-    $('.movieList').scrollLeft($('.movieList').scrollLeft() + 350);
-});
-
- $("#leftArrowHorror").click(function () { 
-    $('.movieList').scrollLeft($('.movieList').scrollLeft() - 350);
-});
-
-
-
-
+var span = document.getElementsByTagName('span');
+var div= document.getElementsByClassName('movieCard');
+var l = 0;
+span[1].onclick = () =>{
+    l++;
+    for(var i of div)
+    {
+        if(l==0){i.style.left = "0px";}
+        if(l==1){i.style.left = "-740px";}
+        if(l==2){i.style.left = "-1480px";}
+        if(l==3){i.style.left = "-2220px";}
+        if(l==4){i.style.left = "-2960px";}
+        if(l>4){l=4;}
+    }
+}
+span[0].onclick = () =>{
+    l--;
+    for(var i of div)
+    {
+        if(l==0){i.style.left = "0px";}
+        if(l==1){i.style.left = "-740px";}
+        if(l==2){i.style.left = "-1480px";}
+        if(l==3){i.style.left = "-2220px";}
+        if(l==4){i.style.left = "-2960px";}
+        if(l<0){l=0;}
+    }
+}
 });     
 });
 

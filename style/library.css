@@ -95,49 +95,104 @@ select{
 
 }
 
+
 /*movie card*/
-.movie-insert{
-    width: 1500px;
-    height: 370px;
-    margin: 100px auto;
-    
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-appearance: none;
-    appearance: none;
-    white-space: nowrap;
-    /* float: left; */
-    }
-    .movie-insert::-webkit-scrollbar{
-        visibility: hidden;
-    }
-    
-    .buttons{
-        position: absolute;
-        margin-top: 235px;
-    }
-    [src="../img/other/left_arrow_icon.svg"]{
-        margin-left: 20px;
-    }
-    
-    [src="../img/other/right_arrow_icon.svg"]{
-        margin-left: 1400px;
-    }
-    
+/* SLIDER SECTION */
+.row .movieList{
+    width: 100%;
+    height: 400px;
+    margin: 200px auto;
+    overflow: hidden;
+    position: relative;
+}
 
+/* SLIDER */
+/* BUTTONS CLICK TO SLIDE */
+span{
+    position: absolute;
+    top: 40%;
+    margin-top: 10%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #5D5FEF;
+    left: 1.5%;
+    z-index: 1;
+}
 
-    .movieCard{
-        width: 286px;
-        height: 350px;
-        display: inline-block;
-        /* transition: 0.5s; */
-        border-radius: 20px;
-        
-        box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-        -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-        -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-      }
+span:nth-of-type(2){
+    left: 97%;
+    text-align: right;
+}
+
+.comedy{
+    width: 98%;
+    height: 400px;
+    /* background: #f4f4f4; */
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+.comedy::-webkit-scrollbar{
+    visibility: hidden;
+}
+    
+.action{
+    width: 98%;
+    height: 400px;
+    /* background: #f4f4f4; */
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+.action::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.horror{
+    width: 98%;
+    height: 400px;
+    /* background: #f4f4f4; */
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+.horror::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.romance{
+    width: 98%;
+    height: 400px;
+    /* background: #f4f4f4; */
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+.romance:-webkit-scrollbar{
+    visibility: hidden;
+}
+    
+/* MOVIE CARD */
+.movieCard{
+    min-width: 250px;
+    height: 343px;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    margin-left: 20px;
+    color: black;
+    transition: 0.5s;
+
+    /* shadow */
+    box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+    -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+}
 
   /*heart icon*/
   .divheart{
@@ -169,7 +224,7 @@ select{
 .movieButton{
     
     width: 170px;
-  border-radius: 25px;
+    border-radius: 25px;
     font-size: 14px;
     margin-top: 15px;
     
