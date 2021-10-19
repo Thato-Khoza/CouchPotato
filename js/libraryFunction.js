@@ -13,23 +13,43 @@ $.getJSON(URL,function(result){
     //insert comedy row
     for(i=0; i < result.results.length; i++){
 
-        var genreCode = result.results[i].genre_ids[0];
+        var genreCode = result.results[i].genre_ids[0]; //variable that holds the genre
 
 
         //Creating variable for rating value
-        var rating = Math.round(result.results[i].vote_average/2);
+        var rating = Math.round(result.results[i].vote_average/2); //rounds up the rating devided by 2
 
+        //filter
+        // Movies of page 0 filter 
+        if(genreCode === 28){
+             genreName = "Action"; 
+            }
+             else if(genreCode === 12){
+                  genreName = "Adventure" 
+                }else if(genreCode === 16){
+                     genreName = "Animation" 
+                }else if(genreCode === 35){ 
+                    genreName = "Comady" 
+                }else if(genreCode === 80){
+                     genreName = "Crime" 
+                }else if(genreCode === 99){
+                     genreName = "Docomentary" 
+                };
+
+        
+        
+        //output star rating
         function star(rating) {
             var starHTML = ''; //creates empty string where stars will be placed
             var rate = parseInt(rating); //changes rating to int
-            var increment = 0;
+            var count = 0; //sets counter to zero
             var max = 5; // maximum rating
          
-            while(increment < rate) {
+            while(count < rate) { //outputs a star while the counter is less than the user rating
               starHTML += '<i class="material-icons white">grade</i>';
-              increment++;
+              count++;
             }
-            while(max > rate) {
+            while(max > rate) { //outputs dark stars for the rating the user didnt give
                 starHTML += '<i class="material-icons gray">grade</i>';
                 max--;
               }
