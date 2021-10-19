@@ -196,3 +196,10 @@ footer img{
     padding: 20px;
     width: 90px; 
 } */
+
+.white {
+    color: white;
+  }
+  .gray {
+    color: rgb(107, 99, 99);
+  }

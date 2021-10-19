@@ -14,7 +14,32 @@ $.getJSON(URL,function(result){
     for(i=0; i < result.results.length; i++){
 
         var genreCode = result.results[i].genre_ids[0];
+
+
+        //Creating variable for rating value
+        var rating = Math.round(result.results[i].vote_average/2);
+
+        function star(rating) {
+            var starHTML = ''; //creates empty string where stars will be placed
+            var rate = parseInt(rating); //changes rating to int
+            var increment = 0;
+            var max = 5; // maximum rating
+         
+            while(increment < rate) {
+              starHTML += '<i class="material-icons white">grade</i>';
+              increment++;
+            }
+            while(max > rate) {
+                starHTML += '<i class="material-icons gray">grade</i>';
+                max--;
+              }
+         
         
+            return starHTML;
+          };
+
+          var stars = star(rating);
+                 
 
         $(".row.movie-insert.comedy").append(
 
@@ -29,7 +54,7 @@ $.getJSON(URL,function(result){
                         <div class='overlay'>\
                             <div class='hover-text'>\
                                 <h6>" + result.results[i].original_title +"</h6>\
-                                <h5>Rating</h5>\
+                                <h5>"+ stars +"</h5>\
                                 <div class='button1 movieButton'>Discover</div>\
                                 <div class='button2 movieButton'>Watch Later</div>\
                             </div><!--hoverText-->\
