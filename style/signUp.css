@@ -38,7 +38,7 @@
     text-align: center;
     right: 0;
     transition: all ease-in-out 500ms;
-    background-image: url(../img/coupleOnCouch.png) ;
+    -: url(../img/coupleOnCouch.png) ;
     background-size: contain ;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,7 +96,7 @@ input{
   }*/
 
 :root {
-  --colour-one: #5D5FEF;
+  --colour-one: #5d5fef;
   --colour-one-dark: #23004d;
   --colour-one-light: #a49eac;
   --colour-one-lightest: #f2f2f2;
@@ -158,6 +158,8 @@ img {
 
 .login-img {
   justify-self: center;
+  background-image: url("../img/coupleOnCouch2.png");
+  background-size: cover;
 }
 
 .login-img img {
@@ -174,7 +176,7 @@ img {
 .login-sheet-2 {
   position: absolute;
   bottom: 16px;
-  width: 100%;
+  width: auto;
   background-color: #f2f2f2;
   padding: 32px 16px;
   border-radius: 16px;
@@ -213,7 +215,7 @@ img {
 
 .login-icon {
   font-size: 24px;
-  color: #5D5FEF;
+  color: #5d5fef;
 }
 
 .login-input {
@@ -244,7 +246,7 @@ img {
   display: block;
   padding: 16px;
   margin: 32px 0;
-  background-color: #5D5FEF;
+  background-color: #5d5fef;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -269,7 +271,7 @@ img {
 
 .login-signUp,
 .login-signIn {
-  color: #5D5FEF;
+  color: #5d5fef;
   cursor: pointer;
 }
 
@@ -291,10 +293,45 @@ img {
   display: none;
 }
 
+.container {
+  background-image: none;
+}
+
+@media screen and (max-width: 567px) {
+  .forms {
+    width: 348px;
+    justify-self: center;
+    margin-left: 48px;
+  }
+  .container {
+    background-image: url("../img/coupleOnCouch2.png");
+    background-size: cover;
+    width: 100%;
+  }
+  .login-sheet {
+    width: auto !important;
+  }
+  .row {
+    margin-left: inherit !important;
+    margin-left: 16px !important;
+  }
+}
 @media screen and (min-width: 567px) {
   .forms {
     width: 348px;
     justify-self: center;
+  }
+  .container {
+    background-image: url("../img/coupleOnCouch2.png");
+    background-size: cover;
+    width: 100%;
+  }
+  .login-sheet {
+    width: auto !important;
+  }
+  .row {
+    margin-left: inherit !important;
+    margin-left: 16px !important;
   }
 }
 
@@ -302,6 +339,7 @@ img {
   .container {
     height: 100vh;
     overflow: hidden;
+    background-image: none;
   }
 
   .login-info {
