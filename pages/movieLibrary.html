@@ -13,27 +13,28 @@
         name="lecturer" content="Mike Maynard"
         name="subject" content="IDV100"
         name="class" content="4"/>
-
+ 
         <title>Couch Potato - Movie Library</title>
-
+ 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-
+ 
         <!--CSS-->
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/library.css">
-
+ 
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-
-
+ 
+ 
     </head>
     <body>
-
-        <div class="container-fluid"><!--primary container that holds everything-->
+ 
+        <div class="container-fluid outer-container"><!--primary container that holds everything-->
+            
             <div class = "row">
                 <div class="col-md-12 col-sm-12 col-12 one d-sm-block d-none">
                     <div class="header">
@@ -57,7 +58,7 @@
                     </div> <!--header-->
                 </div><!--col-->
             </div> <!--row-->
-
+ 
             <div class = "row libraryHeader">
                 <div class="col-md-12 col-sm-12 col-12">
                         <h1>Movie Library</h1>
@@ -97,7 +98,7 @@
                 </div><!--select box-->
                </div><!--col-->
             </div><!--row-->
-
+ 
              <!-- Mobile Filter -->
              <div class = "row filterList">
                 <div class="d-md-none d-sm-none d-block col-12 filters" >
@@ -106,95 +107,98 @@
                        <div class = "filterOption Romance">Romance</div>
                        <div class = "filterOption Action">Action</div>
                 </div><!--col-->
-    
-                <div class = "movie-insert comedy">
-                    <!--insert movie cards-->
-                </div><!--row-->
-
+ 
             </div><!--row-->
-
+ 
+ 
+            <!-- MOVIE GENRES -->
             <!-- COMEDY -->
-            <div class = "row comedy movieList">
-                <div class="col-md-12 col-sm-12 col-12 comedyList" >
-                        <h2>Comedy</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
-    
-                <div class = "movie-insert comedy">
+            <div class="heading">
+                <h2>Comedy</h2>
+            </div>
+            <div class = "carousel">
+                <div class="carouselbox comedy" >
                     <!--insert movie cards-->
-                </div><!--row-->
-
-            </div><!--row-->
+                </div><!--carouselbox comedy carousel inner-->
+                <!-- BUTTONS -->
+                <img src="../img/other/left_arrow_icon.svg" class="buttons" id="ComedyLeft">
+                <img src="../img/other/right_arrow_icon.svg" class="buttons" id="ComedyRight">
+               
+            </div><!--row carousel outer-->
             
-
-
-            
+       
             <!-- ACTION -->
-            <div class = "row action movieList">
-                <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                        <h2>Action</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
-
-                <div class = "movie-insert action">
-                    <!--insert movie cards-->
-            </div><!--row-->
-
-             </div><!--row-->
-             
-             <!-- HORROR -->
-             <div class = "row horror movieList">
-                <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                        <h2>Horror</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
-
-                <div class = "movie-insert horror">
-                    <!--insert movie cards-->
-                </div><!--row-->
-
-             </div><!--row-->
-             
-             <!-- ROMANCE -->
-             <div class = "row Romance movieList">
-                <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                        <h2>Romance</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
-
-                <div class = "movie-insert romance">
-                    <!--insert movie cards-->
-                </div><!--row-->
-
-             </div><!--row-->      
+        <div class="heading">
+            <h2>ACTION</h2>
+        </div><!--genre heading-->
+ 
+        <div class="carousel">
+            <div class="carouselbox action">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
+ 
+            <!-- BUTTONS -->
+            <img src="../img/other/left_arrow_icon.svg" class="buttons" id="ActionLeft">
+            <img src="../img/other/right_arrow_icon.svg" class="buttons" id="ActionRight">
+        
+        </div> <!--carousel outer div-->
+ 
+ 
+        <!-- HORROR -->
+        <div class="heading">
+            <h2>HORROR</h2>
+        </div><!--genre heading-->
+ 
+        <div class="carousel">
+            <div class="carouselbox horror">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
+ 
+            <!-- BUTTONS -->
+            <img src="../img/other/left_arrow_icon.svg" class="buttons" id="HorrorLeft">
+            <img src="../img/other/right_arrow_icon.svg" class="buttons" id="HorrorRight">
+            
+        </div> <!--carousel outer div-->
+ 
+ 
+        <!-- ROMANCE -->
+        <div class="heading">
+            <h2>ROMANCE</h2>
+        </div><!--genre heading-->
+ 
+        <div class="carousel">
+            <div class="carouselbox romance">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
+ 
+            <!-- BUTTONS -->
+            <img src="../img/other/left_arrow_icon.svg" class="buttons" id="RomanceLeft">
+            <img src="../img/other/right_arrow_icon.svg" class="buttons" id="RomanceRight">
+        </div> <!--carousel outer div-->
                
       
      
       
        
         
-
+ 
         
     
-
+ 
     
-
+ 
        <!--Footer-->     
        
        <div class = "row">
         <div class="col-md-12 col-sm-12 col-12 d-sm-block d-none footerlinks">      
             <footer>
                 <p>COUCHPOTATO@2021</p>
-                <a href="https://www.facebook.com/" target="_blank"> <img src="../img/social/facebook_icon.svg" alt="facebook logo" class="social-icon"/></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../img/social/instagram_icon.svg" alt="instagram logo" class="social-icon"/></a>
-                <a href="https://twitter.com/" target="_blank"><img src="../img/social/twitter_icon.svg" alt="twitter logo" class="social-icon"/></a>
+                <a href="https://www.facebook.com/" target="_blank"> <img src="../img/social/facebook_icon.svg" alt="facebook logo"/></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/social/instagram_icon.svg" alt="instagram logo"/></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../img/social/twitter_icon.svg" alt="twitter logo"/></a>
             </footer>
         </div><!--col-->
-
+ 
         <div class="d-block d-sm-none col-12 footerNav">      
             <footer>
                 <div class="nav-footer">
@@ -207,18 +211,19 @@
             </footer>
         </div><!--col-->
     </div> <!--row-->
-
+ 
 </div><!--container-->
-
-
+ 
+ 
 <!-- Add jQuery Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+ 
 <!--Link to javascript file-->
     <script src="../js/index.js"></script>
     <script src="../js/data.js"></script>
-    <script src="../js/functions.js"></script>
-    
+    <script src="../js/libraryFunction.js"></script>
 </body>
   
 </html>
+ 
+
