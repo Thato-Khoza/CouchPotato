@@ -145,23 +145,40 @@ select{
 
 /* SLIDER */
 /* BUTTONS CLICK TO SLIDE */
-span{
+/* .buttons{
     position: absolute;
     top: 40%;
-    margin-top: 60px;
-    font-size: 60px;
+    /* margin-top: 60px; */
+    /* font-size: 60px;
     font-weight: bold;
-    color: #5D5FEF;
-    left: -25px;
+    color: #5D5FEF; */
+   /* left: -25px;
     z-index: 1;
 }
 
-span:nth-of-type(2){
+.buttons:nth-of-type(2){
     left: 100%;
     text-align: right;
+} */
+
+.buttons{
+    width: 50px;
+    position: absolute;
+   top: 40%;
+}
+[src="../img/other/left_arrow_icon.svg"]{
+    /* margin-left: 100px; */
+    left: -25px;
 }
 
-
+[src="../img/other/right_arrow_icon.svg"]{
+    /* margin-left: 1400px; */
+    left: 100%;
+}
+.buttons:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
 
 
     
