@@ -1,0 +1,28 @@
+{
+"users": [ 
+    {
+        "username": "Pam Beesly",
+		"password": "<<L5EVys4LFe[9}C", 
+        "account": "active"
+    },
+    {
+        "username": "Jim Helpert",
+        "password": "YB66>>s_?jwG$L", 
+        "account": "active"
+    },
+    {
+        "username": "Michael Scott",
+        "password": "password", 
+        "account": "suspended"
+    },
+    {
+        "username": "Toby Flenderson",
+        "password": ">jUDQADv7{U$veHS", 
+        "account": "active"
+    },
+    {
+        "username": "Dwight Schrute",
+        "password": "Uc^X;Q<}rm.6Q6qG", 
+        "account": "active"
+    }]
+}

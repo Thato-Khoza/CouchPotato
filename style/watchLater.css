@@ -14,6 +14,8 @@
 .textWatchLater{
     margin: 0 auto;
     padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 0px;
     text-align: center;
 }
 
@@ -61,8 +63,8 @@ input{
 
 /* watch later movie heading and buttons */
 .watchLaterMovies{
-    margin-top: 50px;
     padding: 50px;
+    padding-top: 20px;
 }
 
 
@@ -95,7 +97,17 @@ input{
 /*Mobile*/
 @media only screen and (max-width: 500px){
 
+    .row .watchLaterHeading{
+        padding: 0px;
+    }
+    .textWatchLater{
+        margin: 0 auto;
+        padding: 42px;
+       
+        
+    }
     .row h1{
+        margin-top: 0px;
         font-size: 38px;
         text-align: left;
     }
@@ -110,6 +122,10 @@ input{
     .search{
         color: #ffffff; 
         background-color: #2b2b2b;
+        width: 320px;
+        margin-top: 10px;
+         float: left;
+         
        
     }
     

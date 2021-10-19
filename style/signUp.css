@@ -96,7 +96,7 @@ input{
   }*/
 
 :root {
-  --colour-one: #9d4bff;
+  --colour-one: #5D5FEF;
   --colour-one-dark: #23004d;
   --colour-one-light: #a49eac;
   --colour-one-lightest: #f2f2f2;
@@ -213,7 +213,7 @@ img {
 
 .login-icon {
   font-size: 24px;
-  color: #9d4bff;
+  color: #5D5FEF;
 }
 
 .login-input {
@@ -244,7 +244,7 @@ img {
   display: block;
   padding: 16px;
   margin: 32px 0;
-  background-color: #9d4bff;
+  background-color: #5D5FEF;
   color: #fff;
   font-weight: 600;
   text-align: center;
@@ -269,7 +269,7 @@ img {
 
 .login-signUp,
 .login-signIn {
-  color: #9d4bff;
+  color: #5D5FEF;
   cursor: pointer;
 }
 

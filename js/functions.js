@@ -4,6 +4,19 @@ $(document).ready(function() {
 
 
     
+
+    //Social media icon hover
+    //changes social media icon when hovered
+      $(".social-icon").mouseenter(function(){    //on hover   
+        $(this).attr('src',($(this).attr('src').replace('.svg','-hover.svg')))   
+    });     
+
+    $(".social-icon").mouseleave(function(){     // off hover  
+      $(this).attr('src',($(this).attr('src').replace('-hover.svg','.svg')))  
+    }); 
+  
+
+
 });
 
 const signingUp = document.getElementById('signing-up');

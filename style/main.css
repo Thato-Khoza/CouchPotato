@@ -18,6 +18,10 @@ h2{
 body{
     font-family: 'Open Sans', sans-serif;
 }
+h6{
+    font-size: 15px;
+}
+
 
 /*container*/
 .container-fluid {width:100%;max-width:none ;padding-left:0;padding-right:0}
@@ -56,10 +60,49 @@ body{
  }
 
  .active{
-     font-weight: bold;
+     
      color: #5D5FEF;
+     background-color: #cbcbfd;
+     font-weight: 500;
+     border-radius: 30px;
+     padding: 7px;
+     padding-left: 20px;
+     text-align: center;
  }
+ a .active {
+     
+    color: #6d6fe7;
+    text-align: left;
+    padding-right: 25px;
+}
+
  
+ .userPic{
+     width: 60px;
+     margin-top: -8px;
+     margin-right: 60px;
+     float: left;
+     
+ }
+ .UserProfile{
+    float: right;
+    margin-top: -14px;
+ }
+
+.accountText{
+    float: left;
+    padding: 0;
+    margin-left: -40px;
+   
+}
+.accountText p{
+   margin-top: -30px;
+   font-size: 14px;
+   font-weight: 300;
+}
+.accountText p:hover{
+    color: #5D5FEF;
+ }
  /*Buttons*/
  .button1{
      background-color: #5D5FEF;
@@ -142,7 +185,54 @@ footer img{
         margin-left: -300px;
  
     }
+     .userPic{
+     width: 60px;
+     margin-top: -8px;
+     margin-right: 60px;
+     float: left;
+     
+ }
+ .UserProfile{
+    width: 80px;
+ }
+
+.accountText{
+    margin-left: 0px;
+   
 }
+.accountText h6{
+   display: none;
+ }
+.accountText p{
+   margin-top: -25px;
+   font-size: 12px;
+   
+}
+.accountText p:hover{
+    color: #5D5FEF;
+ }
+
+ /*nav change*/
+ .nav-container li{
+     font-size: 14px;
+ }
+ .active{
+     
+    padding: 6px;
+    padding-left: 18px;
+    
+}
+a .active {
+
+   padding-right: 23px;
+}
+
+h6{
+    font-size: 12px;
+}
+}
+
+
 
 /*Mobile*/
 @media only screen and (max-width: 500px){
@@ -154,6 +244,33 @@ footer img{
     .row p{
         font-size: 12px;
         text-align: left;
+    }
+
+    /*Mobile Footer*/
+    footer{
+        margin-left: 80px;
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 785px;
+        /* Height of the footer*/ 
+        height: 80px;
+        background-color: #2b2b2b;
+        margin: 0px 0px 0px;
+        
+    }
+    
+    footer img{
+        float:left;
+        width: 85px;
+        padding: 20px;
+       
+       
+    
+    }
+    .nav-footer{
+        margin-top: 47px;
+        margin-left: 363px;
     }
   
 }

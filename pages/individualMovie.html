@@ -45,6 +45,13 @@
                                         <a href="../index.html"><li>Home</li></a>
                                         <a href="movieLibrary.html"><li>Library</li></a>
                                         <a href="watchLater.html"><li>Watch Later</li></a>          
+                                        <div class="UserProfile">
+                                            <img src="../img/UserIcon.png" class="userPic">
+                                            <div class = "accountText">
+                                                <h6>Account Holder</h6>
+                                                <a href="signUp.html"><p>Sign Out<p></a>
+                                            </div>
+                                        </div>        
                                     </ul>  
                             </div> <!--nav-container-->
                     </div> <!--header-->
@@ -70,35 +77,52 @@
         
 
         
-    </div><!--container-->
-
-    </body>
-
-             <!--Footer-->     
-             <div class="container-fluid"><!--primary container that holds everything-->
-                <div class = "row">
-                    <div class="col-md-12 col-sm-12 col-12 d-sm-block d-none footerlinks">      
-                        <footer>
-                            <p>COUCHPOTATO@2021</p>
-                            <a href="https://www.facebook.com/" target="_blank"> <img src="../img/social/facebook_icon.svg" alt="facebook logo"/></a>
-                            <a href="https://www.instagram.com/" target="_blank"><img src="../img/social/instagram_icon.svg" alt="instagram logo"/></a>
-                            <a href="https://twitter.com/" target="_blank"><img src="../img/social/twitter_icon.svg" alt="twitter logo"/></a>
-                        </footer>
-                    </div><!--col-->
+       
+     
+      
+       
         
-                    <div class="d-block d-sm-none col-12 footerNav">      
-                        <footer>
-                            <!--insert navigation items here-->
-                            <p>HERE IS THE OTHER NAV</p>
-                        </footer>
-                    </div><!--col-->
-                </div> <!--row-->
+
+        
     
-        <!-- Add jQuery Library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     
-        <!--Link to javascript file-->
-            <script src="../js/index.js"></script>
-            <script src="../js/data.js"></script>
-            </body>
-    </html>
+
+       <!--Footer-->     
+       
+       <div class = "row">
+        <div class="col-md-12 col-sm-12 col-12 d-sm-block d-none footerlinks">      
+            <footer>
+                <p>COUCHPOTATO@2021</p>
+                <a href="https://www.facebook.com/" target="_blank"> <img src="../img/social/facebook_icon.svg" alt="facebook logo" class="social-icon"/></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/social/instagram_icon.svg" alt="instagram logo" class="social-icon"/></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../img/social/twitter_icon.svg" alt="twitter logo" class="social-icon"/></a>
+            </footer>
+        </div><!--col-->
+
+        <div class="d-block d-sm-none col-12 footerNav">      
+            <footer>
+                <div class="nav-footer">
+                    <!--insert navigation items here-->
+                    <a href="../index.html"><div class="nav-icon"><img src="../img/nav/home.svg"></div></a>
+                    <a href="movieLibrary.html"><div class="nav-icon"><img src="../img/nav/Movies.svg"></div></a>
+                    <a href="watchLater.html"><div class="nav-icon"><img src="../img/nav/bookmark.svg"></div></a>
+                    <a href="user.html"><div class="nav-icon"><img src="../img/nav/user.svg"></div></a>
+                </div>
+            </footer>
+        </div><!--col-->
+    </div> <!--row-->
+
+</div><!--container-->
+
+
+<!-- Add jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--Link to javascript file-->
+    <script src="../js/index.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/functions.js"></script>
+</body>
+  
+</html>
