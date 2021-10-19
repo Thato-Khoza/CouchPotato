@@ -221,6 +221,17 @@ span:nth-of-type(2){
     font-size: 14px;
     margin-top: 15px;
     
+} 
+/*Filter List Mobile*/
+
+.row.filterList{
+    height: 50px;
+}
+.filterOption{
+    display: inline;
+    float: left;
+    padding: 0px 20px 0px;
+    margin-left: 10px;
 }
 
 /*Media Query*/
