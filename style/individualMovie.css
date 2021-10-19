@@ -1,28 +1,42 @@
 .Block {
-    width: 0 auto;
-    height: 200px;
-    background-color:rgb(53, 53, 53);
+  width: 0 auto;
+  height: 300px;
+  background-color: rgb(53, 53, 53);
+}
+
+.imgage-block,
+.movie-info {
+  border: 2px solid white;
+  height: 200px;
+}
+.movie-info {
+  float: left;
+  width: 50%;
+  height: 300px;
+}
+.image-block {
+  float: left;
+  width: 50%;
+  height: 300px;
 }
 
 .blockBottom {
-    width: 0 auto;
-    height: 400px;
-    background-color: white;
+  width: 0 auto;
+  height: 400px;
+  background-color: white;
 }
-
 
 /*Media Q = md + sm screen */
 @media screen and (min-width: 768px) {
-    .blockBottom {
-      background-color: white;
-      height: 400px;
-    }
+  .blockBottom {
+    background-color: white;
+    height: 400px;
   }
+}
 
-  @media only screen and (min-width: 992px) {
-    .blockBottom {
-        background-color: white !important;
-        height: 200px; 
-    } 
+@media only screen and (min-width: 992px) {
+  .blockBottom {
+    background-color: white !important;
+    height: 200px;
   }
-  
+}
