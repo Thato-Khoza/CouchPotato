@@ -15,6 +15,7 @@ body{
 .outer-container{
     width: 100%;
 }
+
  
 /*header*/
  
@@ -209,6 +210,18 @@ select{
     position: absolute;
     z-index: -1;
     border-radius: 20px;
+    margin-left: -125px;
+
+}
+
+.hover-text h6 {
+    width: 220px;
+    margin: 0 auto;
+    white-space: initial;
+    overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  padding-bottom: 10px;
 }
 
 /*hover*/
@@ -223,7 +236,7 @@ select{
     width: 250px;
     color: white;
     border-radius: 20px;
-    margin-left: 125px;
+    
    
     
 }
