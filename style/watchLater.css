@@ -14,6 +14,8 @@
 .textWatchLater{
     margin: 0 auto;
     padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 0px;
     text-align: center;
 }
 
@@ -61,8 +63,8 @@ input{
 
 /* watch later movie heading and buttons */
 .watchLaterMovies{
-    margin-top: 50px;
     padding: 50px;
+    padding-top: 20px;
 }
 
 
