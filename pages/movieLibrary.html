@@ -33,7 +33,8 @@
     </head>
     <body>
 
-        <div class="container-fluid"><!--primary container that holds everything-->
+        <div class="container-fluid outer-container"><!--primary container that holds everything-->
+            
             <div class = "row">
                 <div class="col-md-12 col-sm-12 col-12 one d-sm-block d-none">
                     <div class="header">
@@ -106,71 +107,71 @@
                        <div class = "filterOption Romance">Romance</div>
                        <div class = "filterOption Action">Action</div>
                 </div><!--col-->
-    
-                <div class = "movie-insert comedy">
-                    <!--insert movie cards-->
-                </div><!--row-->
 
             </div><!--row-->
 
+
+            <!-- MOVIE GENRES -->
             <!-- COMEDY -->
-            <div class = "row comedy movieList">
-                <div class="col-md-12 col-sm-12 col-12 comedyList" >
-                        <h2>Comedy</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
-    
-                <div class = "movie-insert comedy">
+            <div class="heading">
+                <h2>Comedy</h2>
+            </div>
+            <div class = "carousel">
+                <div class="carouselbox" >
                     <!--insert movie cards-->
-                </div><!--row-->
-
-            </div><!--row-->
+                </div><!--carouselbox comedy carousel inner-->
+                <!-- BUTTONS -->
+                <span id="leftComedy"><</span>
+                <span id="rightComedy">></span>
+            </div><!--row carousel outer-->
             
-
-
-            
+       
             <!-- ACTION -->
-            <div class = "row action movieList">
-                <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                        <h2>Action</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
+        <div class="heading">
+            <h2>ACTION</h2>
+        </div><!--genre heading-->
 
-                <div class = "movie-insert action">
-                    <!--insert movie cards-->
-            </div><!--row-->
+        <div class="carousel">
+            <div class="carouselbox">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
 
-             </div><!--row-->
-             
-             <!-- HORROR -->
-             <div class = "row horror movieList">
-                <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                        <h2>Horror</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
+            <!-- BUTTONS -->
+            <span><</span>
+            <span>></span>
+        </div> <!--carousel outer div-->
 
-                <div class = "movie-insert horror">
-                    <!--insert movie cards-->
-                </div><!--row-->
 
-             </div><!--row-->
-             
-             <!-- ROMANCE -->
-             <div class = "row Romance movieList">
-                <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                        <h2>Romance</h2>
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                </div><!--col-->
+        <!-- HORROR -->
+        <div class="heading">
+            <h2>HORROR</h2>
+        </div><!--genre heading-->
 
-                <div class = "movie-insert romance">
-                    <!--insert movie cards-->
-                </div><!--row-->
+        <div class="carousel">
+            <div class="carouselbox">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
 
-             </div><!--row-->      
+            <!-- BUTTONS -->
+            <span><</span>
+            <span>></span>
+        </div> <!--carousel outer div-->
+
+
+        <!-- ROMANCE -->
+        <div class="heading">
+            <h2>ROMANCE</h2>
+        </div><!--genre heading-->
+
+        <div class="carousel">
+            <div class="carouselbox">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
+
+            <!-- BUTTONS -->
+            <span><</span>
+            <span>></span>
+        </div> <!--carousel outer div-->
                
       
      
@@ -217,6 +218,7 @@
 <!--Link to javascript file-->
     <script src="../js/index.js"></script>
     <script src="../js/data.js"></script>
+    <script src="../js/libraryFunction.js"></script>
 </body>
   
 </html>

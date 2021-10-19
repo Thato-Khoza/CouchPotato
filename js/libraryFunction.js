@@ -43,9 +43,9 @@ $.getJSON(URL,function(result){
     
   
 for(i=0; i < 10; i++){
-        $(".movie-insert").append(
+        $(".carouselbox").append(
 
-        "<div class='movieCard' id='movieCardSlide'>\
+        "<div class='movieCard'>\
                 <img class='movieImg' src=''/>\
                 <div class='overlayBlock'>\
                     <div class='divheart'>\
@@ -61,8 +61,8 @@ for(i=0; i < 10; i++){
                     </div>\
                 </div>\
         </div>"
-        )
-    } //for loop(movie card repetition)
+    )
+} //for loop(movie card repetition)
     
 //on click button slider code
 var span = document.getElementsByTagName('span');

@@ -15,9 +15,9 @@ h2{
     font-weight: bolder;
     
 }
-body{
+/* body{
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
 /*container*/
 .container-fluid {width:100%;max-width:none ;padding-left:0;padding-right:0}
