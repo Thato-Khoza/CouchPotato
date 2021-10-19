@@ -297,6 +297,25 @@ img {
   background-image: none;
 }
 
+@media screen and (max-width: 567px) {
+  .forms {
+    width: 348px;
+    justify-self: center;
+    margin-left: 48px;
+  }
+  .container {
+    background-image: url("../img/coupleOnCouch2.png");
+    background-size: cover;
+    width: 100%;
+  }
+  .login-sheet {
+    width: auto !important;
+  }
+  .row {
+    margin-left: inherit !important;
+    margin-left: 16px !important;
+  }
+}
 @media screen and (min-width: 567px) {
   .forms {
     width: 348px;
@@ -306,6 +325,13 @@ img {
     background-image: url("../img/coupleOnCouch2.png");
     background-size: cover;
     width: 100%;
+  }
+  .login-sheet {
+    width: auto !important;
+  }
+  .row {
+    margin-left: inherit !important;
+    margin-left: 16px !important;
   }
 }
 
