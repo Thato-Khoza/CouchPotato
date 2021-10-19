@@ -272,7 +272,10 @@ select{
  
 .movieButton{
     margin: 0 auto;
-    width: 170px;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    padding-top:7px;
     border-radius: 25px;
     font-size: 14px;
     margin-top: 15px;
