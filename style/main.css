@@ -60,6 +60,32 @@ body{
      color: #5D5FEF;
  }
  
+ .userPic{
+     width: 60px;
+     margin-top: -8px;
+     margin-right: 60px;
+     float: left;
+     
+ }
+ .UserProfile{
+    float: right;
+    margin-top: -14px;
+ }
+
+.accountText{
+    float: left;
+    padding: 0;
+    margin-left: -40px;
+   
+}
+.accountText p{
+   margin-top: -30px;
+   font-size: 14px;
+   font-weight: 300;
+}
+.accountText p:hover{
+    color: #5D5FEF;
+ }
  /*Buttons*/
  .button1{
      background-color: #5D5FEF;
@@ -142,6 +168,32 @@ footer img{
         margin-left: -300px;
  
     }
+     .userPic{
+     width: 60px;
+     margin-top: -8px;
+     margin-right: 60px;
+     float: left;
+     
+ }
+ .UserProfile{
+    width: 80px;
+ }
+
+.accountText{
+    margin-left: 0px;
+   
+}
+.accountText h6{
+   display: none;
+ }
+.accountText p{
+   margin-top: -25px;
+   font-size: 12px;
+   
+}
+.accountText p:hover{
+    color: #5D5FEF;
+ }
 }
 
 /*Mobile*/
