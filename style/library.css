@@ -76,24 +76,31 @@ input{
 /*select options*/
 select{
     color: #2b2b2b;
-    background-color: #EEEEEE;
+    background-color: #cdc8d4;
     width: 200px;
     border-radius: 30px;
     padding-left:15px;
-    border: 1px solid #2b2b2b;
-   float: right;
-     
+    float: right;
+    border-right: 15px solid #cdc8d4;
 }
+
 #ratingCheck {
     word-wrap: normal;
     margin-left: 20px;
+    padding-right:20px ;
 }
 
 .selectBox{
-
     padding-right: 50px;
-
 }
+
+select option:focus {
+    box-shadow: 0 0 10px 100px #000 inset;
+    background-color: #5D5FEF !important;
+}
+
+  
+ 
 
 
 /*movie card*/
