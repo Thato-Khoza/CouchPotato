@@ -4,20 +4,21 @@
   background-color: rgb(53, 53, 53);
 }
 
-.imgage-block,
-.movie-info {
-  border: 2px solid white;
-  height: 200px;
-}
+.image-block,
 .movie-info {
   float: left;
   width: 50%;
   height: 300px;
 }
+
 .image-block {
-  float: left;
-  width: 50%;
-  height: 300px;
+  text-align: center;
+  padding-top: 4%;
+}
+
+.image-block img {
+  width: 36%;
+  height: auto;
 }
 
 .blockBottom {
