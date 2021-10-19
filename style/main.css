@@ -207,6 +207,25 @@ footer img{
 .accountText p:hover{
     color: #5D5FEF;
  }
+
+ /*nav change*/
+ .nav-container li{
+     font-size: 14px;
+ }
+ .active{
+     
+    padding: 6px;
+    padding-left: 18px;
+    
+}
+a .active {
+
+   padding-right: 23px;
+}
+
+h6{
+    font-size: 12px;
+}
 }
 
 /*Mobile*/
