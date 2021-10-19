@@ -56,9 +56,22 @@ body{
  }
 
  .active{
-     font-weight: bold;
+     
      color: #5D5FEF;
+     background-color: #cbcbfd;
+     font-weight: 500;
+     border-radius: 30px;
+     padding: 7px;
+     padding-left: 20px;
+     text-align: center;
  }
+ a .active {
+     
+    color: #6d6fe7;
+    text-align: left;
+    padding-right: 25px;
+}
+
  
  .userPic{
      width: 60px;
