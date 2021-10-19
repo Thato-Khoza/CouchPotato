@@ -4,6 +4,10 @@ $(document).ready(function() {
 
 
     
+
+    //Active Nav Icon
+    
+    $('.activeNav').attr('src', 'https://www.clipartmax.com/png/middle/52-528905_how-to-set-use-blue-arrow-blue-svg-vector-clip-art-blue.png');
 });
 
 const signingUp = document.getElementById('signing-up');
