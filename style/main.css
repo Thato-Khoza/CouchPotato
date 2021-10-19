@@ -18,6 +18,10 @@ h2{
 body{
     font-family: 'Open Sans', sans-serif;
 }
+h6{
+    font-size: 15px;
+}
+
 
 /*container*/
 .container-fluid {width:100%;max-width:none ;padding-left:0;padding-right:0}
@@ -226,7 +230,8 @@ a .active {
 h6{
     font-size: 12px;
 }
-}
+
+
 
 /*Mobile*/
 @media only screen and (max-width: 500px){
@@ -268,16 +273,3 @@ h6{
     }
   
 }
-/* 
-
-.nav-footer{
-   
-    bottom: 0;
-    margin-right: 10%;
-}
-
-.nav-icon img{
-    padding: 20px;
-    width: 90px; 
-} */
-
