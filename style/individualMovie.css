@@ -1,25 +1,7 @@
 .Block {
   width: 0 auto;
-  height: 600px;
+  height: 620px;
   background-color: rgb(53, 53, 53);
-}
-
-.image-block,
-.movie-info {
-  float: left;
-  width: 50%;
-  height: 300px;
-  color: white;
-}
-
-.image-block {
-  text-align: center;
-  padding-top: 17%;
-}
-
-.image-block img {
-  width: 36%;
-  height: auto;
 }
 
 .blockBottom {
@@ -28,43 +10,107 @@
   background-color: white;
 }
 
-.movie-rating p {
-  display: inline;
-  margin-right: 18px;
+.image-block,
+.movie-info {
+  float: left;
+  width: 50%;
+
+  color: white;
 }
 
+.image-block {
+  text-align: center;
+  padding-top: 17%;
+}
+.image-block img {
+  width: 36%;
+  height: auto;
+}
+.movie-rating p {
+  display: inline;
+  margin-right: 10px;
+}
 .movie-rating {
   border-bottom: 2px solid white;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 10px;
-  height: 98px;
+  padding: 10px;
+  height: 122px;
 }
-
 .movie-date,
 .movie-genre {
   float: left;
   width: 50%;
 }
-
 .btnGenre {
   width: 30%;
   text-align: center;
   border: 2px solid white;
-  border-radius: 50px;
+  border-radius: 15px;
+}
+.movie-watch {
+  margin: 20px;
+}
+
+.blockBottom {
+  padding: 17px;
+}
+@media screen and (max-width: 567px) {
+  .image-block,
+  .movie-info {
+    float: none;
+  }
+  .image-block {
+    width: 100%;
+    height: 300px;
+    padding: 5%;
+    padding-top: 0px;
+  }
+  .image-block img {
+    width: 100%;
+  }
+  .movie-info {
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    height: 700px;
+  }
+  .blockBottom {
+    display: none;
+  }
+  .resize {
+    height: 23px;
+  }
 }
 
 /*Media Q = md + sm screen */
-@media screen and (min-width: 768px) {
-  .blockBottom {
+@media screen and (max-width: 1024px) {
+  .image-block,
+  .movie-info {
+    float: none;
+  }
+  .image-block {
+    width: 100%;
+    height: 300px;
+    padding: 5%;
+    padding-top: 0px;
+  }
+  .image-block img {
+    width: 53%;
+  }
+  .Block {
+    height: fit-content;
+    background-color: none;
+  }
+  .movie-info {
+    width: 100%;
     background-color: white;
-    height: 400px;
+    color: black;
+    margin-top: 10px;
+    height: 700px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .blockBottom {
-    background-color: white !important;
-    height: 200px;
-  }
 }
