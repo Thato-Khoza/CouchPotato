@@ -453,31 +453,31 @@ $.getJSON(URL,function(result){
  });
  
  $("#ComedyRight").click(function () { 
-    $('.carouselbox.comedy').scrollLeft($('.carouselbox.comedy').scrollLeft() + 1350);
+    $('.carouselbox.comedy').scrollLeft($('.carouselbox.comedy').scrollLeft() + 800);
  });
 // ACTION SLIDE
  $("#ActionLeft").click(function () { 
-    $('.carouselbox.action').scrollLeft($('.carouselbox.action').scrollLeft() - 1350);
+    $('.carouselbox.action').scrollLeft($('.carouselbox.action').scrollLeft() - 800);
  });
  
  $("#ActionRight").click(function () { 
-    $('.carouselbox.action').scrollLeft($('.carouselbox.action').scrollLeft() + 1350);
+    $('.carouselbox.action').scrollLeft($('.carouselbox.action').scrollLeft() + 800);
  });
  // HORROR SLIDE
  $("#HorrorLeft").click(function () { 
-    $('.carouselbox.horror').scrollLeft($('.carouselbox.horror').scrollLeft() - 1350);
+    $('.carouselbox.adventure').scrollLeft($('.carouselbox.adventure').scrollLeft() - 800);
  });
  
  $("#HorrorRight").click(function () { 
-    $('.carouselbox.horror').scrollLeft($('.carouselbox.horror').scrollLeft() + 1350);
+    $('.carouselbox.adventure').scrollLeft($('.carouselbox.adventure').scrollLeft() + 800);
  });
  // ROMANCE SLIDE
  $("#RomanceLeft").click(function () { 
-    $('.carouselbox.romance').scrollLeft($('.carouselbox.romance').scrollLeft() - 1350);
+    $('.carouselbox.animation').scrollLeft($('.carouselbox.animation').scrollLeft() - 800);
  });
  
  $("#RomanceRight").click(function () { 
-    $('.carouselbox.romance').scrollLeft($('.carouselbox.romance').scrollLeft() + 1350);
+    $('.carouselbox.animation').scrollLeft($('.carouselbox.animation').scrollLeft() + 800);
  });
  
 });     
