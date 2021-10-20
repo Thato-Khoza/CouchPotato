@@ -56,6 +56,7 @@ body{
     height: 380px;
     width: auto;
     overflow: hidden;
+    scroll-behavior: smooth;
     white-space: nowrap;
     display: inline-block;
     text-align: center;
@@ -337,6 +338,13 @@ select{
     .filters{
         margin: 0 auto;
     }
+
+    .buttons{
+        visibility: hidden;
+    }
+    .carouselbox{
+        scroll-behavior: smooth;
+    }
     
 }
  
@@ -375,6 +383,14 @@ select{
         
         
     }
+
+    .buttons{
+        visibility: hidden;
+    }
+    .carouselbox{
+        scroll-behavior: smooth;
+    }
+    
   
 }
  
