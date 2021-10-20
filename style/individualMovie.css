@@ -183,5 +183,32 @@ h6{
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 500px) {
+      /*Mobile Footer*/
+      footer{
+        margin-left: 80px;
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 785px;
+        /* Height of the footer*/ 
+        height: 80px;
+        background-color: #2b2b2b;
+        margin: 0px 0px 0px;
+        
+    }
+    
+    footer img{
+        float:left;
+        width: 85px;
+        padding: 20px;
+       
+       
+    
+    }
+    .nav-footer{
+        margin-top: 47px;
+        margin-left: 68px;
+    }
+  
 }
