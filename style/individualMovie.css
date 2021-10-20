@@ -1,19 +1,20 @@
 /*Text*/
-.row h1{
-  font-family: 'Open Sans', sans-serif;
+.row h1 {
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
-  
 }
 
-.row h2,.row h3,.row h4,.row h5{
-  font-family: 'Open Sans', sans-serif;
+.row h2,
+.row h3,
+.row h4,
+.row h5 {
+  font-family: "Open Sans", sans-serif;
   font-weight: bolder;
-  
 }
-body{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
-h6{
+h6 {
   font-size: 15px;
 }
 /*container*/
@@ -31,8 +32,8 @@ h6{
 }
 
 /*Movie Information*/
-.movie-info{
-  padding:80px;
+.movie-info {
+  padding: 80px;
 }
 
 .image-block,
@@ -42,7 +43,7 @@ h6{
   color: white;
 }
 
-.movie-info h2{
+.movie-info h2 {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
@@ -59,21 +60,20 @@ h6{
   display: inline;
   margin-right: 10px;
 }
-.movie-rating  {
+.movie-rating {
   border-bottom: 2px solid white;
   margin-bottom: 20px;
   padding: 10px;
   height: 70px;
   margin-top: -10px;
 }
-.movie-rating.two{
+.movie-rating.two {
   border-bottom: none;
   border-bottom: 2px solid white;
   height: 120px;
 }
 .movie-date,
 .movie-genre {
-  
   float: left;
   width: 50%;
 }
@@ -111,20 +111,22 @@ h6{
     width: 100%;
   }
   .movie-info {
-   
     width: 100%;
     background-color: white;
     color: #2b2b2b;
     margin-top: 10px;
     height: 700px;
+    padding: none;
   }
-  .row h2,.row h3,.row h4,.row h5{
-    font-family: 'Open Sans', sans-serif;
+  .row h2,
+  .row h3,
+  .row h4,
+  .row h5 {
+    font-family: "Open Sans", sans-serif;
     font-weight: bolder;
-    
   }
-  body{
-    font-family: 'Open Sans', sans-serif;
+  body {
+    font-family: "Open Sans", sans-serif;
   }
   .blockBottom {
     display: none;
@@ -132,7 +134,6 @@ h6{
   .resize {
     height: 23px;
   }
- 
 }
 
 /*Media Q = md + sm screen */
@@ -154,13 +155,15 @@ h6{
     height: fit-content;
     background-color: none;
   }
-  .row h2,.row h3,.row h4,.row h5{
-    font-family: 'Open Sans', sans-serif;
+  .row h2,
+  .row h3,
+  .row h4,
+  .row h5 {
+    font-family: "Open Sans", sans-serif;
     font-weight: bolder;
-    
   }
-  body{
-    font-family: 'Open Sans', sans-serif;
+  body {
+    font-family: "Open Sans", sans-serif;
   }
   .movie-info {
     width: 100%;
@@ -168,47 +171,41 @@ h6{
     color: #2b2b2b;
     margin-top: 10px;
     height: 700px;
+    padding: 25px;
   }
-  .movie-rating  {
+  .movie-rating {
     border-bottom: 2px solid #2b2b2b;
   }
-  .movie-rating.two{
+  .movie-rating.two {
     border-bottom: 2px solid #2b2b2b;
   }
 
   .btnGenre {
-  
     border: 2px solid #2b2b2b;
-   
   }
 }
 
 @media only screen and (max-width: 500px) {
-      /*Mobile Footer*/
-      footer{
-        margin-left: 80px;
-        position: fixed;
-        padding: 10px 10px 0px 10px;
-        bottom: 0;
-        width: 785px;
-        /* Height of the footer*/ 
-        height: 80px;
-        background-color: #2b2b2b;
-        margin: 0px 0px 0px;
-        
-    }
-    
-    footer img{
-        float:left;
-        width: 85px;
-        padding: 20px;
-       
-       
-    
-    }
-    .nav-footer{
-        margin-top: 47px;
-        margin-left: 68px;
-    }
-  
+  /*Mobile Footer*/
+  footer {
+    margin-left: 80px;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 785px;
+    /* Height of the footer*/
+    height: 80px;
+    background-color: #2b2b2b;
+    margin: 0px 0px 0px;
+  }
+
+  footer img {
+    float: left;
+    width: 85px;
+    padding: 20px;
+  }
+  .nav-footer {
+    margin-top: 47px;
+    margin-left: 68px;
+  }
 }
