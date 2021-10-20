@@ -315,6 +315,7 @@ img {
     margin-left: inherit !important;
     margin-left: 16px !important;
   }
+  
 }
 @media screen and (min-width: 567px) {
   .forms {
@@ -340,6 +341,7 @@ img {
     height: 100vh;
     overflow: hidden;
     background-image: none;
+    
   }
 
   .login-info {
@@ -374,5 +376,19 @@ img {
 
   .login-sheet-2 {
     bottom: -88px;
+   
+ 
+    
+  }
+}
+
+/*Media Query*/
+/*tablet*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  .login-sheet-2 {
+    bottom: -100px;
+    
   }
 }
