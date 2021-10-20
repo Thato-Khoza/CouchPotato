@@ -87,9 +87,9 @@ $.getJSON(URL,function(result){
 
           var stars = star(rating);
 
-        if(genreName == "Comedy"){
+        if(genreName == "Crime"){
 
-        $(".carouselbox.comedy").append(
+        $(".carouselbox.crime").append(
  
         "      <div class='movieCard'>\
         <img class='movieImg' src='https://image.tmdb.org/t/p/w500"+result.results[i].poster_path+"'/>\
