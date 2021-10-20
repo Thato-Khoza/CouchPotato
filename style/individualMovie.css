@@ -1,6 +1,26 @@
+/*Text*/
+.row h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  
+}
+
+.row h2,.row h3,.row h4,.row h5{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+h6{
+  font-size: 15px;
+}
+/*container*/
 .Block {
+  margin-top: 35px;
   width: 0 auto;
-  height: 620px;
+  height: 700px;
   background-color: rgb(53, 53, 53);
 }
 
@@ -10,12 +30,21 @@
   background-color: white;
 }
 
+/*Movie Information*/
+.movie-info{
+  padding:80px;
+}
+
 .image-block,
 .movie-info {
   float: left;
   width: 50%;
-
   color: white;
+}
+
+.movie-info h2{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .image-block {
@@ -30,23 +59,33 @@
   display: inline;
   margin-right: 10px;
 }
-.movie-rating {
+.movie-rating  {
   border-bottom: 2px solid white;
-  margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px;
-  height: 122px;
+  height: 70px;
+  margin-top: -10px;
+}
+.movie-rating.two{
+  border-bottom: none;
+  border-bottom: 2px solid white;
+  height: 120px;
 }
 .movie-date,
 .movie-genre {
+  
   float: left;
   width: 50%;
 }
 .btnGenre {
-  width: 30%;
+  width: 60px;
   text-align: center;
   border: 2px solid white;
   border-radius: 15px;
+  margin: 3px;
+  padding: 2px;
+  float: left;
+  display: inline;
 }
 .movie-watch {
   margin: 20px;
@@ -55,6 +94,8 @@
 .blockBottom {
   padding: 17px;
 }
+
+/*Tablet*/
 @media screen and (max-width: 567px) {
   .image-block,
   .movie-info {
@@ -70,11 +111,20 @@
     width: 100%;
   }
   .movie-info {
+   
     width: 100%;
     background-color: white;
-    color: black;
+    color: #2b2b2b;
     margin-top: 10px;
     height: 700px;
+  }
+  .row h2,.row h3,.row h4,.row h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
   }
   .blockBottom {
     display: none;
@@ -82,6 +132,7 @@
   .resize {
     height: 23px;
   }
+ 
 }
 
 /*Media Q = md + sm screen */
@@ -103,12 +154,32 @@
     height: fit-content;
     background-color: none;
   }
+  .row h2,.row h3,.row h4,.row h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
   .movie-info {
     width: 100%;
     background-color: white;
-    color: black;
+    color: #2b2b2b;
     margin-top: 10px;
     height: 700px;
+  }
+  .movie-rating  {
+    border-bottom: 2px solid #2b2b2b;
+  }
+  .movie-rating.two{
+    border-bottom: 2px solid #2b2b2b;
+  }
+
+  .btnGenre {
+  
+    border: 2px solid #2b2b2b;
+   
   }
 }
 

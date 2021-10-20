@@ -2,15 +2,39 @@
 $(document).ready(function() {
     console.log("jQuery added & ready");
  
-      /*API*/
+     
+ //get URL query
+ const queryString = window.location.search;
+ const urlParams = new URLSearchParams(queryString);
+ const id = urlParams.get('id');
+
+
+ //check to see if it works
+ console.log(id);
+
+ //dynamic http request
+  /*API*/
+const api_key = '7e01193d3f7015b3d6f900efd5b545c2';
 const URL='https://api.themoviedb.org/3/movie/popular?api_key=7e01193d3f7015b3d6f900efd5b545c2&page=1';
 const URL2='https://api.themoviedb.org/3/movie/popular?api_key=7e01193d3f7015b3d6f900efd5b545c2&page=10';
 const URL3='https://api.themoviedb.org/3/movie/popular?api_key=7e01193d3f7015b3d6f900efd5b545c2&page=20';
 
+
 $.getJSON(URL,function(result){
-    console.log(result);
+    
 
     console.log(result.results.length);
+
+    //isolated information from returned object
+        movieID = result.results.id; //not in loop, getting one object
+        // launch_img = result.links.patch.large; 
+        // launch_desc = result.details;
+        // launch_succ = result.success; 
+        // launch_date = result.date_utc; 
+        // flight_num = result.flight_number; 
+        // ships = result.ships.length;
+        // wikiLink = result.links.wikipedia;
+
 
  
     
@@ -77,7 +101,7 @@ $.getJSON(URL,function(result){
                 <div class='hover-text'>\
                     <h6>" + result.results[i].original_title +"</h6>\
                     <h5>"+ stars +"</h5>\
-                    <div class='button1 movieButton'>Discover</div>\
+                    <a href = "+"https://api.themoviedb.org/3/movie/"+ movieID +"?api_key="+ api_key +"&language=en-US"+"><div class='button1 movieButton'>Discover</div></a>\
                     <div class='button2 movieButton'>Watch Later</div>\
                 </div><!--hoverText-->\
              </div><!--overlay-->\
