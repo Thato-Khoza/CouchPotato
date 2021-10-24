@@ -84,7 +84,7 @@ $(document).ready(function() {
        //output trailer
        $(".image-block").append(
 
-        "<iframe width='710' height='465' src='https://www.youtube.com/embed/"+ result.videos.results[0].key+"' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+        "<iframe width='100%' height='465' src='https://www.youtube.com/embed/"+ result.videos.results[0].key+"' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
        )
 
 
