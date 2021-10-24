@@ -2,21 +2,12 @@
 $(document).ready(function() {
     console.log("jQuery added & ready");
  
-     
- //get URL query
- const queryString = window.location.search;
- const urlParams = new URLSearchParams(queryString);
- const id = urlParams.get('id');
-
-
- //check to see if it works
- console.log(id);
 
  //dynamic http request
   /*API*/
   const api_key = '7e01193d3f7015b3d6f900efd5b545c2';
 
-  for(j=1; j<30; j++){
+  for(j=1; j<30; j++){ //loops through all code for the various pages
 
   
     
@@ -26,25 +17,13 @@ const URL='https://api.themoviedb.org/3/movie/popular?api_key='+api_key+'&page='
 $.getJSON(URL,function(result){
     
 
+   
     console.log(result.results.length);
 
-    //isolated information from returned object
-        movieID = result.results.id; //not in loop, getting one object
-        // launch_img = result.links.patch.large; 
-        // launch_desc = result.details;
-        // launch_succ = result.success; 
-        // launch_date = result.date_utc; 
-        // flight_num = result.flight_number; 
-        // ships = result.ships.length;
-        // wikiLink = result.links.wikipedia;
-
-
- 
     
-  
     for(i=0; i < result.results.length; i++){
         var genreCode = result.results[i].genre_ids[0]; //variable that holds the genre
-        var genreName = '';
+        var genreName = ''; //sets genre name to an empty string
 
         //Creating variable for rating value
         var rating = Math.round(result.results[i].vote_average/2); //rounds up the rating devided by 2
@@ -104,7 +83,7 @@ $.getJSON(URL,function(result){
                 <div class='hover-text'>\
                     <h6>" + result.results[i].original_title +"</h6>\
                     <h5>"+ stars +"</h5>\
-                    <a href = "+"https://api.themoviedb.org/3/movie/"+ movieID +"?api_key="+ api_key +"&language=en-US"+"><div class='button1 movieButton'>Discover</div></a>\
+                    <a href = "+"individualMovie.html?id"+ result.results[i].id +"><div class='button1 movieButton'>Discover</div></a>\
                     <div class='button2 movieButton'>Watch Later</div>\
                 </div><!--hoverText-->\
              </div><!--overlay-->\
@@ -125,7 +104,7 @@ $.getJSON(URL,function(result){
                 <div class='hover-text'>\
                     <h6>" + result.results[i].original_title +"</h6>\
                     <h5>"+ stars +"</h5>\
-                    <div class='button1 movieButton'>Discover</div>\
+                    <a href = "+"individualMovie.html?id"+ result.results[i].id +"><div class='button1 movieButton'>Discover</div></a>\
                     <div class='button2 movieButton'>Watch Later</div>\
                 </div><!--hoverText-->\
              </div><!--overlay-->\
@@ -144,7 +123,7 @@ $.getJSON(URL,function(result){
                 <div class='hover-text'>\
                     <h6>" + result.results[i].original_title +"</h6>\
                     <h5>"+ stars +"</h5>\
-                    <div class='button1 movieButton'>Discover</div>\
+                    <a href = "+"individualMovie.html?id"+ result.results[i].id +"><div class='button1 movieButton'>Discover</div></a>\
                     <div class='button2 movieButton'>Watch Later</div>\
                 </div><!--hoverText-->\
              </div><!--overlay-->\
@@ -163,7 +142,7 @@ $.getJSON(URL,function(result){
                 <div class='hover-text'>\
                     <h6>" + result.results[i].original_title +"</h6>\
                     <h5>"+ stars +"</h5>\
-                    <div class='button1 movieButton'>Discover</div>\
+                    <a href = "+"individualMovie.html?id"+ result.results[i].id +"><div class='button1 movieButton'>Discover</div></a>\
                     <div class='button2 movieButton'>Watch Later</div>\
                 </div><!--hoverText-->\
              </div><!--overlay-->\
