@@ -36,7 +36,7 @@
     </head>
     <body>
 
-        <div class="container-fluid"><!--primary container that holds everything-->
+        <div class="container-fluid outer-container"><!--primary container that holds everything-->
             <div class = "row">
                 <div class="col-md-12 col-sm-12 col-12 one d-sm-block d-none">
                     <div class="header">
@@ -75,20 +75,19 @@
                 </div> <!--watch later heading column-->
             </div> <!--row for watch later header image and text-->
        
-            <div class="row watchLaterMovies">
-                <div class="col-12 col-md-12 col-sm-12" watchLaterMovies>
-                    <h1>Watch Later</h1>
-                    <!-- <div class="col-lg-2 d-sm-none d-none d-sm-block left"> -->
-
-                        <img src="../img/other/left_arrow_icon.svg" class="buttons">
-
-                    <!-- </div> left arrow-->
-                    <!-- <div class="col-lg-2 d-sm-none d-none d-sm-block right"> -->
-
-                        <img src="../img/other/right_arrow_icon.svg" class="buttons">
-                        
-                    <!-- </div> right arrow-->
-                </div> <!--watch later movies column-->
+            <!-- WATCH LATER -->
+            <div class="heading">
+                <h2>Watch Later</h2>
+            </div>
+            <div class = "carousel">
+                <div class="carouselbox watchLater" >
+                    <!--insert movie cards-->
+                </div><!--carouselbox comedy carousel inner-->
+                <!-- BUTTONS -->
+                <img src="../img/other/left_arrow_icon.svg" class="buttons" id="WatchLaterLeft">
+                <img src="../img/other/right_arrow_icon.svg" class="buttons" id="WatchLaterRight">
+               
+            </div><!--row carousel outer-->
             </div> <!--watch later movies-->
 
         
