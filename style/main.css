@@ -164,16 +164,6 @@ h6{
     cursor: pointer;
 }
 
-
- .buttons{
-    width: 80px;
-    cursor: pointer;
-
-}
-.buttons:hover, .button1:hover{
-    opacity: 70%;
-}
-
 /*footer*/
 footer{
     margin-top: auto;
