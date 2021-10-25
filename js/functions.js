@@ -43,6 +43,63 @@ signingIn.addEventListener('click', ()=>{
 });
 
 
+// Authentication
+
+$(function(){
+
+
+  $(".login-btn").on("click", function(){
+
+      var username = $(".username").val();
+      var password = $(".password").val();
+
+      url = "https://owmakerspace.co.za/users/data.json";
+
+   $.getJSON(url, function(result){
+      console.log(result.users);
+
+      for(i = 0; i < result.users.length; i++){
+
+          if(result.users[i].username === username){
+              
+              if(result.users[i].password === password){
+                  
+                  if(result.users[i].account === "active"){
+                      window.location.href = "../index.html";
+                      sessionStorage.setItem("username", username)
+                  }else {
+                      $(".message").css("background-color", "orange")
+                      $(".message").text("Your account has been suspended! Contact support")
+                  }
+
+
+              }else {
+                  $(".message").css("background-color", "tomato")
+                  $(".message").text("Your Password or Email does not match")
+              }
+
+
+
+
+          }else {
+              $(".message").css("background-color", "tomato")
+              $(".message").text("Your Password or Email does not match")
+          }//checking for user
+
+      }
+          
+  
+  
+  
+  
+  
+  
+  
+    }); // end of http request
+
+  }); //end of click event
+
+});
 
 
 

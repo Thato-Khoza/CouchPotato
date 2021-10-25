@@ -134,6 +134,9 @@ h6 {
   .resize {
     height: 23px;
   }
+  .movie-rating {
+    border-bottom: 2px solid #2b2b2b;
+  }
 }
 
 /*Media Q = md + sm screen */
