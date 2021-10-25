@@ -48,7 +48,7 @@ signingIn.addEventListener('click', ()=>{
 $(function(){
 
 
-  $(".login-btn").on("click", function(){
+  $(".btn").on("click", function(){ //here
 
       var username = $(".username").val();
       var password = $(".password").val();
@@ -65,7 +65,7 @@ $(function(){
               if(result.users[i].password === password){
                   
                   if(result.users[i].account === "active"){
-                      window.location.href = "../index.html";
+                      window.location.href = ""; //here
                       sessionStorage.setItem("username", username)
                   }else {
                       $(".message").css("background-color", "orange")
