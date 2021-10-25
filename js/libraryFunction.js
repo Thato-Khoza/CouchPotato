@@ -161,12 +161,12 @@ $.getJSON(URL,function(result){
 //on click button slider code
  
 // COMEDY SLIDE
- $("#ComedyLeft").click(function () { 
-    $('.carouselbox.comedy').scrollLeft($('.carouselbox.comedy').scrollLeft() - 800);
+ $("#AnimationLeft").click(function () { 
+    $('.carouselbox.animation').scrollLeft($('.carouselbox.animation').scrollLeft() - 800);
  });
  
- $("#ComedyRight").click(function () { 
-    $('.carouselbox.comedy').scrollLeft($('.carouselbox.comedy').scrollLeft() + 800);
+ $("#AnimationRight").click(function () { 
+    $('.carouselbox.animation').scrollLeft($('.carouselbox.animation').scrollLeft() + 800);
  });
 // ACTION SLIDE
  $("#ActionLeft").click(function () { 
@@ -177,20 +177,20 @@ $.getJSON(URL,function(result){
     $('.carouselbox.action').scrollLeft($('.carouselbox.action').scrollLeft() + 800);
  });
  // HORROR SLIDE
- $("#HorrorLeft").click(function () { 
+ $("#AdventureLeft").click(function () { 
     $('.carouselbox.adventure').scrollLeft($('.carouselbox.adventure').scrollLeft() - 800);
  });
  
- $("#HorrorRight").click(function () { 
+ $("#AdventureRight").click(function () { 
     $('.carouselbox.adventure').scrollLeft($('.carouselbox.adventure').scrollLeft() + 800);
  });
  // ROMANCE SLIDE
- $("#RomanceLeft").click(function () { 
-    $('.carouselbox.animation').scrollLeft($('.carouselbox.animation').scrollLeft() - 800);
+ $("#CrimeLeft").click(function () { 
+    $('.carouselbox.crime').scrollLeft($('.carouselbox.crime').scrollLeft() - 800);
  });
  
- $("#RomanceRight").click(function () { 
-    $('.carouselbox.animation').scrollLeft($('.carouselbox.animation').scrollLeft() + 800);
+ $("#CrimeRight").click(function () { 
+    $('.carouselbox.crime').scrollLeft($('.carouselbox.crime').scrollLeft() + 800);
  });
  
 });     
