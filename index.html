@@ -36,7 +36,7 @@
     </head>
     <body>
 
-    <div class="container-fluid"><!--primary container that holds everything-->
+    <div class="container-fluid outer-container"><!--primary container that holds everything-->
         <div class = "row">
             <div class="col-md-12 col-sm-12 col-12 one d-sm-block d-none">
                 <div class="header">
@@ -93,21 +93,37 @@
          </div><!--row-->
 
          
-        <div class = "row popularMovies">
-            <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                    <h2>Popular Movies</h2>
-                    <img src="img/other/left_arrow_icon.svg" class="buttons">
-                    <img src="img/other/right_arrow_icon.svg" class="buttons">
-            </div><!--col-->
-         </div><!--row-->
+        <!-- POPULAR -->
+        <div class="heading">
+            <h2>Popular Movies</h2>
+        </div><!--genre heading-->
+ 
+        <div class="carousel">
+            <div class="carouselbox popular">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
+ 
+            <!-- BUTTONS -->
+            <img src="img/other/left_arrow_icon.svg" class="buttons" id="PopularLeft">
+            <img src="img/other/right_arrow_icon.svg" class="buttons" id="PopularRight">
+        
+        </div> <!--carousel outer div-->
 
-         <div class = "row reviews">
-            <div class="col-md-12 col-sm-12 col-12" popularMovies>
-                    <h2>Reviews</h2>
-                    <img src="img/other/left_arrow_icon.svg" class="buttons">
-                    <img src="img/other/right_arrow_icon.svg" class="buttons">
-            </div><!--col-->
-         </div><!--row-->
+        <!-- REVIEW -->
+        <div class="heading">
+            <h2>Reviews</h2>
+        </div><!--genre heading-->
+ 
+        <div class="carousel">
+            <div class="carouselbox review">
+                <!--random data/API-->
+            </div> <!--carousel inner div-->
+ 
+            <!-- BUTTONS -->
+            <img src="img/other/left_arrow_icon.svg" class="buttons" id="ReviewLeft">
+            <img src="img/other/right_arrow_icon.svg" class="buttons" id="ReviewRight">
+        
+        </div> <!--carousel outer div-->
           
       
        
@@ -150,7 +166,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!--Link to javascript file-->
-    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/data.js"></script>
     <script src="js/functions.js"></script>
 </body>

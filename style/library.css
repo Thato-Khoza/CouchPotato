@@ -52,6 +52,7 @@ body{
 .carouselbox{
     height: 380px;
     width: auto;
+    /* overflow-x: auto; */
     overflow: hidden;
     scroll-behavior: smooth;
     white-space: nowrap;
@@ -146,27 +147,14 @@ select{
  
 /* SLIDER */
 /* BUTTONS CLICK TO SLIDE */
-/* .buttons{
-    position: absolute;
-    top: 40%;
-    /* margin-top: 60px; */
-    /* font-size: 60px;
-    font-weight: bold;
-    color: #5D5FEF; */
-   /* left: -25px;
-    z-index: 1;
-}
- 
-.buttons:nth-of-type(2){
-    left: 100%;
-    text-align: right;
-} */
  
 .buttons{
     width: 50px;
     position: absolute;
    top: 40%;
+
 }
+
 [src="../img/other/left_arrow_icon.svg"]{
     /* margin-left: 100px; */
     left: -25px;
@@ -245,9 +233,6 @@ select{
   
     
 }
-
-
- 
   /*heart icon*/
   .divheart{
     display: none;
@@ -332,12 +317,6 @@ select{
         margin: 0 auto;
     }
 
-    .buttons{
-        visibility: hidden;
-    }
-    .carouselbox{
-        scroll-behavior: smooth;
-    }
     .divheart{
         display: inline;
         width: 60px;
@@ -356,10 +335,34 @@ select{
         margin-top: 20px;
     }
     
+    
+    
+    .buttons{
+        display: none;
+     
+     }
+     
+     [src="../img/other/left_arrow_icon.svg"]{
+         /* margin-left: 100px; */
+         visibility: hidden;
+     }
+      
+     [src="../img/other/right_arrow_icon.svg"]{
+         /* margin-left: 1400px; */
+         visibility: hidden;
+     }
+
+    .carouselbox{
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        
+    }
+
+    
 }
  
 /*Mobile*/
-@media only screen and (max-width: 500px){
+@media only screen and  (max-width: 500px){
  
     .row h1{
         margin-top: 15px;
@@ -402,10 +405,27 @@ select{
         cursor: pointer;
     }
 
+    /* .carousel{
+        display: none;
+    } */
+
     .buttons{
+       display: none;
+    
+    }
+    
+    [src="../img/other/left_arrow_icon.svg"]{
+        /* margin-left: 100px; */
         visibility: hidden;
     }
+     
+    [src="../img/other/right_arrow_icon.svg"]{
+        /* margin-left: 1400px; */
+        visibility: hidden;
+    }
+
     .carouselbox{
+        overflow-x: scroll;
         scroll-behavior: smooth;
     }
     
