@@ -21,7 +21,7 @@ h6 {
 .Block {
   margin-top: 35px;
   width: 0 auto;
-  height: 700px;
+  height: 100%;
   background-color: rgb(53, 53, 53);
 }
 
@@ -41,6 +41,8 @@ h6 {
   float: left;
   width: 50%;
   color: white;
+  background-color: rgb(53, 53, 53);
+  
 }
 
 .movie-info h2 {
@@ -50,12 +52,10 @@ h6 {
 
 .image-block {
   text-align: center;
-  padding-top: 17%;
+  padding-top: 95px;
+  padding-left: 55px;
 }
-.image-block img {
-  width: 36%;
-  height: auto;
-}
+
 .movie-rating p {
   display: inline;
   margin-right: 10px;
@@ -78,7 +78,7 @@ h6 {
   width: 50%;
 }
 .btnGenre {
-  width: 60px;
+  width: 30%;
   text-align: center;
   border: 2px solid white;
   border-radius: 15px;
@@ -93,6 +93,15 @@ h6 {
 
 .blockBottom {
   padding: 17px;
+}
+
+/*trailer*/
+iframe{
+  border-radius: 30px;
+      /* shadow */
+      box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+      -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+      -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
 }
 
 /*Tablet*/
