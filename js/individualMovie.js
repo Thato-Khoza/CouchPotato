@@ -24,7 +24,7 @@ $(document).ready(function() {
     //run dynamic request
     $.getJSON(url, function(result){
 
-        console.log(result);
+      
         console.log(result.title);
         
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
         //similar movies
 
         //dynamic http request
-        for(j=1; j<3; j++){ //loops through all code for the various pages
+        for(j=1; j<2; j++){ //loops through all code for the various pages
 
   
     
