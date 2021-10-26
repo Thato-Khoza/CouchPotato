@@ -169,11 +169,11 @@ $.getJSON(URL,function(result){
  });
 // REVIEW SLIDE
  $("#ReviewLeft").click(function () { 
-    $('.carouselbox.review').scrollLeft($('.carouselbox.review').scrollLeft() - 800);
+    $('.carouselbox.upcoming').scrollLeft($('.carouselbox.upcoming').scrollLeft() - 800);
  });
  
  $("#ReviewRight").click(function () { 
-    $('.carouselbox.review').scrollLeft($('.carouselbox.review').scrollLeft() + 800);
+    $('.carouselbox.upcoming').scrollLeft($('.carouselbox.upcoming').scrollLeft() + 800);
  });
  
 });     

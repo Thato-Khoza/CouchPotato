@@ -169,10 +169,14 @@ $(document).ready(function() {
     });
 
      
-   
-
-
-
+  
+  // POPULAR SLIDE
+ $("#SimilarLeft").click(function () { 
+  $('.carouselbox.similar').scrollLeft($('.carouselbox.similar').scrollLeft() - 800);
 });
 
-  
+$("#SimilarRight").click(function () { 
+  $('.carouselbox.similar').scrollLeft($('.carouselbox.similar').scrollLeft() + 800);
+});
+
+});     
