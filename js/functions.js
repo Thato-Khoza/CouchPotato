@@ -48,10 +48,10 @@ signingIn.addEventListener('click', ()=>{
 $(function(){
 
 
-  $(".btn").on("click", function(){ //here
+  $(".login-signUp, .login-signIn").on("click", function(){ //here
 
-      var username = $(".username").val();
-      var password = $(".password").val();
+      var username = $("username").val();
+      var password = $("password").val();
 
       url = "https://owmakerspace.co.za/users/data.json";
 
@@ -65,7 +65,7 @@ $(function(){
               if(result.users[i].password === password){
                   
                   if(result.users[i].account === "active"){
-                      window.location.href = ""; //here
+                      window.location.href = "https://www.openwindow.co.za"; //here
                       sessionStorage.setItem("username", username)
                   }else {
                       $(".message").css("background-color", "orange")

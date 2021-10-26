@@ -50,12 +50,12 @@
 
                                     <div class="login-container" >
                                         <i class='bx bx-user login-icon'></i>
-                                        <input type="text" placeholder="Username" class="login-input" required autofocus >
+                                        <input type="text" placeholder="Username" class="login-input" id="username" required autofocus >
                                     </div><!--login-container-->
 
                                     <div class="login-container">
                                         <i class='bx bx-lock login-icon'></i>
-                                        <input type="password" placeholder="Password" class="login-input" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title ="Your Password Requires / A Digit / Lowercase & Uppercase Characters / Minimum of 8 Characters Long" required>
+                                        <input type="password" placeholder="Password" class="login-input" id="password" pattern= "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title ="Your Password Requires / A Digit / Lowercase & Uppercase Characters / Minimum of 8 Characters Long" required>
                                     </div><!--login-container-->
 
                                     <a href="#" class="login-frgt">Forgot password?</a>
@@ -73,7 +73,7 @@
 
                                     <div class="login-container">
                                         <i class='bx bx-user login-icon'></i>
-                                        <input type="text" placeholder="Username"  class="login-input" autofocus required>
+                                        <input type="text" placeholder="Username"  class="login-input" id="username" autofocus required>
                                     </div><!--login-container-->
 
                                     <div class="login-container">
@@ -83,7 +83,7 @@
 
                                     <div class="login-container">
                                         <i class='bx bx-lock login-icon'></i>
-                                        <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your Password Requires / A Digit / Lowercase & Uppercase Characters / Minimum of 8 Characters Long  " class="login-input">
+                                        <input type="password" placeholder="Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your Password Requires / A Digit / Lowercase & Uppercase Characters / Minimum of 8 Characters Long  " class="login-input">
                                     </div><!--login-container-->
 
                                     <!--login button-->
@@ -100,6 +100,7 @@
                                         <a href="#" class="login-media-icon"><i class='bx bxl-instagram'></i></a>
                                     </div><!--login-media-->
                                 </form>
+                                <div class="message"></div>
                             </div><!--forms div-->
                         </div><!--log-in info-->
                         </div><!--row-->
