@@ -107,6 +107,7 @@ h6 {
 
 .blockBottom {
   padding: 17px;
+  
 }
 
 /*trailer*/
@@ -166,6 +167,7 @@ iframe{
 
 footer{
   width: 100%;
+  margin-top: 150px;
 }
   
 /* MOVIE CARD */
