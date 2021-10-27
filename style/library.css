@@ -49,11 +49,10 @@ body{
     margin: 0 auto;
 }
  
-.carouselbox{
+/* .carouselbox{
     height: 380px;
     width: auto;
-    /* overflow-x: auto; */
-    overflow: hidden;
+    overflow-x: none;
     scroll-behavior: smooth;
     white-space: nowrap;
     display: inline-block;
@@ -61,7 +60,7 @@ body{
     padding-bottom: 10px !important;
     display: flex;
     align-items: center;
-}
+} */
  
 .row h1{
     font-family: 'Open Sans', sans-serif;
@@ -350,11 +349,11 @@ select{
          visibility: hidden;
      }
 
-    .carouselbox{
-        overflow-x: scroll;
+    /* .carouselbox{
+        overflow-x: auto;
         scroll-behavior: smooth;
         
-    }
+    } */
 
     
 }
@@ -422,10 +421,10 @@ select{
         visibility: hidden;
     }
 
-    .carouselbox{
-        overflow-x: scroll;
+    /* .carouselbox{
+        overflow-x: auto;
         scroll-behavior: smooth;
-    }
+    } */
     
   
 }

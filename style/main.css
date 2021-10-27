@@ -132,7 +132,7 @@ h6{
 .carouselbox{
     height: 380px;
     width: auto;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     white-space: nowrap;
     display: inline-block;
@@ -141,6 +141,16 @@ h6{
     display: flex;
     align-items: center;
 }
+
+/* @media (min-width: 1000px){
+
+    .carouselbox:hover {
+        overflow: auto;
+    }
+
+} */
+
+
 
  /*Buttons*/
  .button1{
@@ -281,6 +291,11 @@ h6{
     font-size: 12px;
     
 }
+
+.carouselbox{
+    overflow-x: auto !important;
+    scroll-behavior: smooth;  
+}
 }
 
 
@@ -322,6 +337,11 @@ h6{
     .nav-footer{
         margin-top: 47px;
         margin-left: 363px;
+    }
+
+    .carouselbox{
+        overflow-x: auto !important;
+        scroll-behavior: smooth;  
     }
   
 }

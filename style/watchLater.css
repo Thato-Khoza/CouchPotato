@@ -25,7 +25,7 @@ body{
     font-size: 42px;
 }
 /* SECTIONS */
-.carousel{ /* section (eg: comedy) */
+/* .carousel{ section (eg: comedy)
     height: 420px;
     width: 95%;
     position: relative;
@@ -35,7 +35,7 @@ body{
 .carouselbox{
     height: 380px;
     width: auto;
-    /* overflow-x: auto; */
+    /* overflow-x: auto; 
     overflow: hidden;
     scroll-behavior: smooth;
     white-space: nowrap;
@@ -44,7 +44,7 @@ body{
     padding-bottom: 10px !important;
     display: flex;
     align-items: center;
-}
+} */
 
 .row h1{
     font-family: 'Open Sans', sans-serif;
@@ -128,7 +128,7 @@ input{
  
     
 /* MOVIE CARD */
-.movieCard{
+/* .movieCard{
     min-width: 250px;
     max-width: 250px;
     height: 343px;
@@ -138,15 +138,15 @@ input{
     text-align: center;
     margin-left: 20px;
     color: black;
-    transition: 0.5s;
+    transition: 0.5s; */
  
     /* shadow */
-    box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+    /* box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
     -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
     -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
-}
+} */
 /*Movie cards*/
-.movieImg{
+/* .movieImg{
     height:343px;
     width: 250px;
     position: absolute;
@@ -154,7 +154,7 @@ input{
     border-radius: 20px;
     margin-left: -125px;
 
-}
+} */
 
 .hover-text h6 {
     width: 220px;
@@ -259,11 +259,11 @@ input{
          visibility: hidden;
      }
 
-    .carouselbox{
+    /* .carouselbox{
         overflow-x: scroll;
         scroll-behavior: smooth;
         
-    }
+    } */
 }
 
 /*Mobile*/
@@ -323,9 +323,9 @@ input{
          visibility: hidden;
      }
 
-    .carouselbox{
+    /* .carouselbox{
         overflow-x: scroll;
         scroll-behavior: smooth;
         
-    }
+    } */
 }
