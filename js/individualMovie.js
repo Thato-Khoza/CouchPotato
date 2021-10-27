@@ -74,6 +74,7 @@ $(document).ready(function() {
 
          }
           
+
         
 
        //output rating
@@ -154,7 +155,7 @@ $(document).ready(function() {
             <div class='overlay'>\
                 <div class='hover-text'>\
                     <h6>" + result.results[i].original_title +"</h6>\
-                    <h5>"+ stars +"</h5>\
+                    <h5 class='stars'>"+ stars +"</h5>\
                     <a href = 'individualMovie.html?id="+ result.results[i].id +"'><div class='button1 movieButton'>Discover</div></a>\
                     <div class='button2 movieButton'>Watch Later</div>\
                 </div><!--hoverText-->\
