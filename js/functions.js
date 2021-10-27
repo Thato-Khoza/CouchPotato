@@ -48,10 +48,10 @@ signingIn.addEventListener('click', ()=>{
 $(function(){
 
 
-  $(".login-signUp, .login-signIn").on("click", function(){ //here
+  $(".login-btn").on("click", function(){ //here
 
-      var username = $("username").val();
-      var password = $("password").val();
+      var username = $("#username").val();
+      var password = $("#password").val();
 
       url = "https://owmakerspace.co.za/users/data.json";
 
