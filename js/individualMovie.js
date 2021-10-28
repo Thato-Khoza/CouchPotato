@@ -164,6 +164,17 @@ $(document).ready(function() {
     </div><!--movieCard-->")
 
       }
+      //shows overlay card on click{
+    $(".movieCard").on('click',function(){
+      console.log("click");
+      if($(this).find(".overlayBlock").css("opacity") == "0") { 
+        console.log("click");
+        $(this).find(".overlayBlock").css("opacity", "1");
+      }else{
+          $(this).find(".overlayBlock").css("opacity", "0");
+      }
+    })
+
     })
   }
        
