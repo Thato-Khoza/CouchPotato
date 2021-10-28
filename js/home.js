@@ -64,6 +64,7 @@ $(".carouselbox.popular").append(
 </div><!--movieCard-->")
 
 }
+
 })
 }
 
