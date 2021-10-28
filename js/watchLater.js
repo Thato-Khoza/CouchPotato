@@ -9,6 +9,8 @@ $(document).ready(function() {
 
   for(j=1; j<30; j++){ //loops through all code for the various pages
 
+    
+
   
     
 const URL='https://api.themoviedb.org/3/movie/popular?api_key='+api_key+'&page='+j;

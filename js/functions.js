@@ -2,7 +2,7 @@
 $(document).ready(function() {
     console.log("jQuery added & ready");
 
-
+ var array=[];
     
 
     //Social media icon hover
@@ -25,6 +25,16 @@ $('.carouselbox').on('click', '.movieCard', function(){
         $(this).find(".overlayBlock").css("opacity", "0");
         console.log("hide");
     }
+});
+
+//add to watch later{
+  $('.carouselbox').on('click', '.movieCard', function(){
+    
+    array.push((this).div)
+    localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
+    console.log(localStorage.getItem("my_Movies"))
+    
+
 });
 
 });
