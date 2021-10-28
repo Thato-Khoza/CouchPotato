@@ -85,7 +85,7 @@ $(function(){
               if(result.users[i].password === password){
                   
                   if(result.users[i].account === "active"){
-                      window.location.href = "https://www.openwindow.co.za"; //here
+                      window.location.href = "../pages/index.html"; //here
                       sessionStorage.setItem("username", username)
                   }else {
                       $(".message").css("background-color", "orange")
@@ -118,6 +118,7 @@ $(function(){
     }); // end of http request
 
   }); //end of click event
+  url = "https://owmakerspace.co.za/users/data.json";
 
 });
 
