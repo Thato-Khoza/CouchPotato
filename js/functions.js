@@ -27,15 +27,17 @@ $('.carouselbox').on('click', '.movieCard', function(){
     }
 });
 
-//add to watch later{
-  $('.carouselbox').on('click', '.movieCard', function(){
+//add to watch later
+// var watchLater = $(".moviecard");
+
+//   $('.carouselbox').on('click', '.movieCard', function(){
     
-    array.push((this).div)
-    localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
-    console.log(localStorage.getItem("my_Movies"))
+//     array.push((this).div)
+//     localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
+//     console.log(localStorage.getItem("my_Movies"))
     
 
-});
+// });
 
 //shows user info
   $('.nav-footer').on('click', '#promtUser', function(){
