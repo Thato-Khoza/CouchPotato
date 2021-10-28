@@ -348,6 +348,10 @@ select{
          /* margin-left: 1400px; */
          visibility: hidden;
      }
+     .overlayBlock:hover{
+        opacity:0;
+        cursor: pointer;
+      }
 
     /* .carouselbox{
         overflow-x: auto;
@@ -401,6 +405,10 @@ select{
         margin-right: 20px;
         cursor: pointer;
     }
+    .overlayBlock:hover{
+        opacity:0;
+        cursor: pointer;
+      }
 
     /* .carousel{
         display: none;

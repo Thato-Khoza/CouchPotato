@@ -152,12 +152,16 @@ $.getJSON(URL,function(result){
              </div><!--overlay-->\
         </div><!--overlayBlock-->\
     </div><!--movieCard-->")
+    
 }
+
 } //for loop(movie card repetition)
+   
+    
 });
+
 } // end of api for loop
 
-    
 //on click button slider code
  
 // COMEDY SLIDE

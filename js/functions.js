@@ -15,7 +15,17 @@ $(document).ready(function() {
       $(this).attr('src',($(this).attr('src').replace('-hover.svg','.svg')))  
     }); 
   
-
+//shows overlay card on click{
+$('.carouselbox').on('click', '.movieCard', function(){
+    console.log("click");
+    if($(this).find(".overlayBlock").css("opacity") == "0") { 
+      console.log("click");
+      $(this).find(".overlayBlock").css("opacity", "1");
+    }else if($(this).find(".overlayBlock").css("opacity") == "1"){
+        $(this).find(".overlayBlock").css("opacity", "0");
+        console.log("hide");
+    }
+});
 
 });
 

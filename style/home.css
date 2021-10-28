@@ -360,6 +360,10 @@ padding-bottom: 10px;
     scroll-behavior: smooth;
     
 }
+.overlayBlock:hover{
+  opacity:0;
+  cursor: pointer;
+}
 }
 
 /*Mobile*/
@@ -427,5 +431,9 @@ padding-bottom: 10px;
     overflow-x: scroll;
     scroll-behavior: smooth;
     
+}
+.overlayBlock:hover{
+  opacity:0;
+  cursor: pointer;
 }
 }
