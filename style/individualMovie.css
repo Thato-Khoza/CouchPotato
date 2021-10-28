@@ -78,13 +78,13 @@ h6 {
   border-bottom: 2px solid white;
   margin-bottom: 20px;
   padding: 10px;
-  height: 70px;
+  height: 90px;
   margin-top: -10px;
 }
 .movie-rating.two {
   border-bottom: none;
   border-bottom: 2px solid white;
-  height: 120px;
+  height: 150px;
 }
 .movie-date,
 .movie-genre {
@@ -92,7 +92,7 @@ h6 {
   width: 50%;
 }
 .btnGenre {
-  width: 30%;
+  width: 45%;
   text-align: center;
   border: 2px solid white;
   border-radius: 15px;
@@ -117,6 +117,8 @@ iframe{
       box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
       -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
       -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+
+     
 }
 /* SECTIONS */
 .carousel{ /* section (eg: comedy) */
@@ -314,6 +316,15 @@ padding-bottom: 10px;
   .movie-rating {
     border-bottom: 2px solid #2b2b2b;
   }
+
+  iframe{
+     
+        width:"80%";
+        
+  }
+  .white{
+    color: #2b2b2b;
+  }
 }
 
 /*Media Q = md + sm screen */
@@ -344,14 +355,19 @@ padding-bottom: 10px;
   }
   body {
     font-family: "Open Sans", sans-serif;
+   
   }
   .movie-info {
     width: 100%;
     background-color: white;
     color: #2b2b2b;
-    margin-top: 10px;
-    height: 700px;
+    margin-top: 150px;
+    height: 750px;
     padding: 25px;
+  }
+
+  .movie-info p{
+    text-align: left;
   }
   .movie-rating {
     border-bottom: 2px solid #2b2b2b;
@@ -363,6 +379,27 @@ padding-bottom: 10px;
   .btnGenre {
     border: 2px solid #2b2b2b;
   }
+  iframe{
+    margin-top:40px;
+    height: 345px;
+  }
+  footer{
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+  .Block .button1{
+    margin-top: 10px;
+    margin-bottom: -50px;
+  }
+  .movie-rating {
+    height:65px
+  }
+  .white{
+    color: #2b2b2b;
+    margin-top: 10px;
+  }
+
+  
 }
 
 @media only screen and (max-width: 500px) {
@@ -388,4 +425,23 @@ padding-bottom: 10px;
     margin-top: 47px;
     margin-left: 68px;
   }
+  .movie-info {
+    height: 800px;
+    
+  }
+  .Block{
+    margin:0;
+    top:0;
+  }
+  .btnGenre{
+    width: 45%;
+  }
+  .white{
+    color: #2b2b2b;
+    margin-top: 10px;
+  }
+  .movie-rating {
+    height:65px
+  }
+
 }
