@@ -37,6 +37,21 @@ $('.carouselbox').on('click', '.movieCard', function(){
 
 });
 
+//shows user info
+  $('.nav-footer').on('click', '#promtUser', function(){
+    console.log("display");
+    $(".userDiv").css("visibility","visible")
+    }
+);
+//exists user info
+$('.userDiv').on('click', '#closeUserInfo', function(){
+  console.log("hide");
+  $(".userDiv").css("visibility","hidden")
+  }
+);
+
+
+
 });
 
 const signingUp = document.getElementById('signing-up');
