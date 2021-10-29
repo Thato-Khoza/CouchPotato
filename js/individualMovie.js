@@ -98,8 +98,7 @@ $(document).ready(function() {
         $(".castList").append(
           ","+result.credits.cast[i].name+""
        )
-
-        }
+}
 
         //similar movies
 
@@ -164,9 +163,61 @@ $(document).ready(function() {
     </div><!--movieCard-->")
 
       }
+
+      $(".button2").click(function(){
+        var cardMovie = $(this).parent().parent().parent().parent()[0];
+        var ID = $(cardMovie).data("id");
+        var temp = localStorage.getItem("movieStorage"); //gets storage data
+        var movieStorage ;
+    
+        if(temp == ""){ //if array empty, creates object to store data
+            movieStorage = [];
+        }else{
+            movieStorage = temp.split("-");
+        }
+    
+        var ifExist = movieStorage.every(item =>{ //bestaan daar iets in die array??
+            return item != ID;
+        });
+    
+        if(ifExist){
+            movieStorage.push(ID + "");
+            localStorage.setItem("movieStorage", movieStorage.join("-"));
+        };
+    
+        console.log(cardMovie);
+    }); //button click watch later
+
+    var watchLaterList = localStorage.getItem("movieStorage").split("-");
+
+for(var i = 0; i < watchLaterList.length; i++){
+    var watchLaterListUrl = 'https://api.themoviedb.org/3/movie/'+ watchLaterList[i] +'?api_key=fbdaccb39dfca477ec685d5da0f0e705&language=en-US'; }
+
+    $.getJSON(watchLaterListUrl, function(watchData){
+
+        $(".watchLater").append(
+ 
+            "<div data-id='"+ watchData.id +"' class='movieCard'>\
+            <img class='movieImg' src='https://image.tmdb.org/t/p/w500"+ watchData.poster_path +"'/>\
+            <div class='overlayBlock'>\
+                <div class='divheart'>\
+                    <img src='../img/other/heart_icon.svg'/>\
+                </div><!--divheart-->\
+                <div class='overlay'>\
+                    <div class='hover-text'>\
+                        <h6>" + watchData.original_title +"</h6>\
+                        <a href = 'individualMovie.html?id="+ watchData.id +"'><div class='button1 movieButton'>Discover</div></a>\
+                        <div class='button2 movieButton'>Watch Later</div>\
+                    </div><!--hoverText-->\
+                 </div><!--overlay-->\
+            </div><!--overlayBlock-->\
+        </div><!--movieCard-->")
+
+        console.log(watchLaterList);
+});
    
 
-    })
+})
   }
        
     });
@@ -181,5 +232,7 @@ $(document).ready(function() {
 $("#SimilarRight").click(function () { 
   $('.carouselbox.similar').scrollLeft($('.carouselbox.similar').scrollLeft() + 800);
 });
+
+
 
 });     

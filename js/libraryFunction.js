@@ -191,6 +191,8 @@ $(".button2").click(function(){
 
 var watchLaterList = localStorage.getItem("movieStorage").split("-");
 
+console.log(watchLaterList);
+
 for(var i = 0; i < watchLaterList.length; i++){
     var watchLaterListUrl = 'https://api.themoviedb.org/3/movie/'+ watchLaterList[i] +'?api_key=fbdaccb39dfca477ec685d5da0f0e705&language=en-US'; }
 
@@ -208,14 +210,22 @@ for(var i = 0; i < watchLaterList.length; i++){
                     <div class='hover-text'>\
                         <h6>" + watchData.original_title +"</h6>\
                         <a href = 'individualMovie.html?id="+ watchData.id +"'><div class='button1 movieButton'>Discover</div></a>\
-                        <div class='button2 movieButton'>Watch Later</div>\
+                        <div class='button3 movieButton'>Remove</div>\
                     </div><!--hoverText-->\
                  </div><!--overlay-->\
             </div><!--overlayBlock-->\
-        </div><!--movieCard-->")
+        </div><!--movieCard-->"
+    )
+
+    $(document).on('click', '.button3', function() {
+        console.log("Daamn");
+        $(this).parent().parent().parent().parent().hide();
+    });
 
         console.log(watchLaterList);
 });
+
+
 
 
 

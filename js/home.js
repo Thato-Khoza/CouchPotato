@@ -46,7 +46,7 @@ for(i=0; i<result.results.length;i++){
 
 $(".carouselbox.popular").append(
 
-  "      <div class='movieCard'>\
+  "      <div data-id='"+ result.results[i].id +"' class='movieCard'>\
   <img class='movieImg' src='https://image.tmdb.org/t/p/w500"+result.results[i].poster_path+"'/>\
   <div class='overlayBlock'>\
       <div class='divheart'>\
@@ -114,7 +114,7 @@ for(i=0; i<result.results.length;i++){
 
 $(".carouselbox.upcoming").append(
 
- "      <div class='movieCard'>\
+ "      <div data-id='"+ result.results[i].id +"' class='movieCard'>\
  <img class='movieImg' src='https://image.tmdb.org/t/p/w500"+result.results[i].poster_path+"'/>\
  <div class='overlayBlock'>\
      <div class='divheart'>\
