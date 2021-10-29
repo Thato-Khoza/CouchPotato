@@ -317,9 +317,9 @@ for(var i=0;i<arrMovieResult.length;i++){
    
     // splitting the date format into year eg 2001-01-12 returns 2001
     var dateParts = arrMovieResult[i].release_date.split("-");
-
+    var Movierate = star(Math.round(arrMovieResult[i].vote_average/2));
   
-if(dateParts[0]==movieDate /*&&  movieRating[0] == star(Math.round(arrMovieResult[i].vote_average/2)*/)
+if(dateParts[0]==movieDate /*&&  movieRating[0] == star(Movierate)*/)
 {
  
     $(".carouselbox.animation").append(
@@ -345,17 +345,18 @@ if(dateParts[0]==movieDate /*&&  movieRating[0] == star(Math.round(arrMovieResul
 
 
 }
+
 }
 })
 
 
 }
   //output data
-  $(".accountText h6").text(sessionStorage.getItem("username"));
-  $(".User_Name").text(sessionStorage.getItem("username"));
- 
- 
- 
+ $(".accountText h6").text(sessionStorage.getItem("username"));
+ $(".User_Name").text(sessionStorage.getItem("username"));
+
+
+
  
  
 
