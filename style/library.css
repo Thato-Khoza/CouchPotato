@@ -325,24 +325,6 @@ select {
     margin: 0 auto;
   }
 
-  .divheart {
-    display: inline;
-    width: 60px;
-    float: right;
-    margin-top: 10px;
-    margin-right: 20px;
-    cursor: pointer;
-  }
-  .button2 {
-    display: none;
-  }
-  .button1 {
-    margin-top: 30px;
-  }
-  .hover-text h5 {
-    margin-top: 20px;
-  }
-
   .buttons {
     display: none;
   }
@@ -414,14 +396,7 @@ select {
     margin-top: 10px;
     float: left;
   }
-  .divheart {
-    display: inline;
-    width: 60px;
-    float: right;
-    margin-top: 10px;
-    margin-right: 20px;
-    cursor: pointer;
-  }
+
   .overlayBlock:hover {
     opacity: 0;
     cursor: pointer;
