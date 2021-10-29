@@ -84,7 +84,7 @@
                   
                   <div class= "selectBox">
                     
-                        <select id="ratingCheck">
+                        <select id="ratingCheck  onchange="movieFilter()">
                             <option>Rating</option>
                             <option>1 star</option>
                             <option>2 star</option>
@@ -95,7 +95,7 @@
                         
                 </div><!--select box-->
                   
-                <div class= "selectBox">
+                <div class= "selectBox" onchange="movieFilter()">
                     <select id="year">
                         <option>Year</option>
                         <option>2018</option> 
@@ -104,7 +104,7 @@
                         <option>2021</option>                           
                     </select>
                 </div><!--select box-->
-                <div class="login-btn" onclick="movieFilter()">Search Filter</div>
+                
                </div><!--col-->
                
             </div><!--row-->
@@ -216,7 +216,7 @@
     <img src="../img/close.png" id="closeUserInfo">
     <img src="../img/UserIcon.png" class="userCircleImg">
     <div class="User_Name">Users Name</div>
-    <div class="User_Email">Email</div>
+   
     <a href="signUp.html"><div class="button1">Sign Out</div></a>
     
 </div>

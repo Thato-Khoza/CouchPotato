@@ -276,7 +276,7 @@ var ArrayMovie=[]
     
 const URL='https://api.themoviedb.org/3/movie/popular?api_key='+api_key;
 var movieDate=$("#year").find(":selected").text();
-
+console.log(movieDate);
 var movieRating=$("#ratingCheck").find(":selected").text();
 
 movieRating=movieRating.split(" ");
@@ -349,8 +349,12 @@ if(dateParts[0]==movieDate /*&&  movieRating[0] == star(Math.round(arrMovieResul
 })
 
 
-
 }
+  //output data
+  $(".accountText h6").text(sessionStorage.getItem("username"));
+  $(".User_Name").text(sessionStorage.getItem("username"));
+ 
+ 
  
  
  
