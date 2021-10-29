@@ -260,22 +260,7 @@ select{
     
     
 } 
-/*Filter List Mobile*/
- 
-.row.filterList{
-    height: 50px;
-}
-.filterOption{
-    display: inline;
-    float: left;
-    padding: 0px 20px 0px;
-    margin-left: 10px;
-}
-.filterOption:hover{
-   cursor: pointer;
-   color: #5D5FEF;
-}
- 
+
 /*Media Query*/
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
