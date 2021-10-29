@@ -201,7 +201,90 @@ $.getJSON(URL,function(result){
 
 
  
+ // function to filter the dates 
+
+function movieFilter() {
+
+    const api_key = '7e01193d3f7015b3d6f900efd5b545c2';
+var ArrayMovie=[]
+    
+const URL='https://api.themoviedb.org/3/movie/popular?api_key='+api_key;
+var movieDate=$("#year").find(":selected").text();
+
+var movieRating=$("#ratingCheck").find(":selected").text();
+
+movieRating=movieRating.split(" ");
+
+// star rating 
+function star(rating) {
+    var starHTML = ''; //creates empty string where stars will be placed
+    var rate = parseInt(rating); //changes rating to int
+    var count = 0; //sets counter to zero
+    var max = 5; // maximum rating
  
+    while(count < rate) { //outputs a star while the counter is less than the user rating
+      starHTML += '<i class="material-icons white">grade</i>';
+      count++;
+    }
+    while(max > rate) { //outputs dark stars for the rating the user didnt give
+        starHTML += '<i class="material-icons gray">grade</i>';
+        max--;
+      }
+ 
+
+    return starHTML;
+  };
+
+
+$.getJSON(URL,function(result){
+ ArrayMovie.push(result) 
+ $("#filterSearch").empty()
+ $("#filterSearch").append("Search Results")
+   $(".carouselbox.animation").empty()
+
+
+
+arrMovieResult=ArrayMovie[0].results
+
+
+for(var i=0;i<arrMovieResult.length;i++){
+   
+    // splitting the date format into year eg 2001-01-12 returns 2001
+    var dateParts = arrMovieResult[i].release_date.split("-");
+
+  
+if(dateParts[0]==movieDate /*&&  movieRating[0] == star(Math.round(arrMovieResult[i].vote_average/2)*/)
+{
+ 
+    $(".carouselbox.animation").append(
+ 
+        "      <div class='movieCard'>\
+        <img class='movieImg' src='https://image.tmdb.org/t/p/w500"+arrMovieResult[i].poster_path+"'/>\
+        <div class='overlayBlock'>\
+            <div class='divheart'>\
+                <img src='../img/other/heart_icon.svg'/>\
+            </div><!--divheart-->\
+            <div class='overlay'>\
+                <div class='hover-text'>\
+                    <h6>" +arrMovieResult[i].title+"</h6>\
+                    <h5>" +star(Math.round(arrMovieResult[i].vote_average/2))+"</h5>\
+                    <a href = 'individualMovie.html?id="+ arrMovieResult[i].id +"'><div class='button1 movieButton'>Discover</div></a>\
+                    <div class='button2 movieButton'>Watch Later</div>\
+                </div><!--hoverText-->\
+             </div><!--overlay-->\
+        </div><!--overlayBlock-->\
+    </div><!--movieCard-->")
+
+
+
+
+}
+}
+})
+
+
+
+}
  
  
  
