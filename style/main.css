@@ -225,6 +225,61 @@ footer img{
     margin-top: 15px;    
 } 
 
+.userDiv{
+    background-color: #cbcbfd;
+    width: 60%;
+    height:470px;
+    position: fixed;
+    top:0;
+    margin:80px;
+    margin-top: 60px;
+    border-radius: 30px;
+    visibility: hidden;
+    
+     /* shadow */
+     box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+     -webkit-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+     -moz-box-shadow: 13px 11px 20px -2px rgba(0,0,0,0.16);
+
+}
+
+.userDiv .userCircleImg{
+    width: 120px;
+    margin-left:30%;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+
+.User_Name,.User_Email{
+
+    padding: 15px 11px;
+    background-color: #ffffff;
+    margin-top: 16px;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: 30px;
+}
+
+.userDiv .button1{
+    width: 140px;
+    margin-left: 80px;
+    margin-top: 23px;
+}
+
+#closeUserInfo{
+    margin-left: 200px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+/* <div class="userDiv">
+<img src="../img/UserIcon.png">
+<div class="User_Name"></div>
+<div class="User_Email"></div>
+<div class="button1">Sign Out</div>
+<div class="button1">Close</div>
+</div> */
+
 
 
 /*Media Query*/
@@ -270,6 +325,15 @@ footer img{
 }
 .accountText p:hover{
     color: #5D5FEF;
+ }
+
+ .closeButton:hover{
+     cursor: pointer;
+ }
+
+ .userDiv a:hover{
+    text-decoration: none;
+   
  }
 
  /*nav change*/

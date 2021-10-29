@@ -27,15 +27,32 @@ $('.carouselbox').on('click', '.movieCard', function(){
     }
 });
 
-//add to watch later{
-  $('.carouselbox').on('click', '.movieCard', function(){
+//add to watch later
+// var watchLater = $(".moviecard");
+
+//   $('.carouselbox').on('click', '.movieCard', function(){
     
-    array.push((this).div)
-    localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
-    console.log(localStorage.getItem("my_Movies"))
+//     array.push((this).div)
+//     localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
+//     console.log(localStorage.getItem("my_Movies"))
     
 
-});
+// });
+
+//shows user info
+  $('.nav-footer').on('click', '#promtUser', function(){
+    console.log("display");
+    $(".userDiv").css("visibility","visible")
+    }
+);
+//exists user info
+$('.userDiv').on('click', '#closeUserInfo', function(){
+  console.log("hide");
+  $(".userDiv").css("visibility","hidden")
+  }
+);
+
+
 
 });
 

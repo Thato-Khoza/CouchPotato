@@ -24,6 +24,7 @@
         <!--CSS-->
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/watchLater.css">
+        <link rel="stylesheet" href="../style/library.css">
 
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
@@ -117,14 +118,23 @@
             <footer>
                 <div class="nav-footer">
                     <!--insert navigation items here-->
-                    <a href="../index.html"><div class="nav-icon"><img src="../img/nav/home.svg" ></div></a>
+                    <a href="index.html"><div class="nav-icon"><img src="../img/nav/home.svg" ></div></a>
                     <a href="movieLibrary.html"><div class="nav-icon"><img src="../img/nav/Movies.svg"></div></a>
                     <a href="watchLater.html"><div class="nav-icon"><img src="../img/nav/bookmark-Active.svg" class="activeNav"></div></a>
-                    <a href="user.html"><div class="nav-icon"><img src="../img/nav/user.svg"></div></a>
+                    <div class="nav-icon" id="promtUser"><img src="../img/nav/user.svg"></div>
                 </div>
             </footer>
         </div><!--col-->
     </div> <!--row-->
+    <!--mobile User Info-->
+    <div class="userDiv">
+        <img src="../img/close.png" id="closeUserInfo">
+        <img src="../img/UserIcon.png" class="userCircleImg">
+        <div class="User_Name">Users Name</div>
+        <div class="User_Email">Email</div>
+        <a href="signUp.html"><div class="button1">Sign Out</div></a>
+        
+    </div>
 
 </div><!--container-->
 
@@ -133,9 +143,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!--Link to javascript file-->
-    <script src="../js/index.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/watchLater.js"></script>
     <script src="../js/data.js"></script>
     <script src="../js/functions.js"></script>
+    <script src="../js/libraryFunction.js"></script>
 </body>
   
 </html>
