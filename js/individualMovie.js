@@ -233,6 +233,8 @@ $("#SimilarRight").click(function () {
   $('.carouselbox.similar').scrollLeft($('.carouselbox.similar').scrollLeft() + 800);
 });
 
-
+ //output data
+ $(".accountText h6").text(sessionStorage.getItem("username"));
+ $(".User_Name").text(sessionStorage.getItem("username"));
 
 });     

@@ -86,6 +86,8 @@ body{
  
 }
 
+
+
 input{
     width: 70%;
 }
@@ -217,13 +219,19 @@ input{
     
     
 } 
-
+footer{
+    width: 1520px;
+    margin-left: -200px;
+}
 
 /*Media Query*/
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-   
+    footer{
+        width: 920px;
+        margin-left: -200px;
+    }
     .row h1{
         font-size: 42px;
         text-align: center;

@@ -135,6 +135,9 @@ $(".carouselbox.upcoming").append(
 })
 }
  
+ //output data
+ $(".accountText h6").text(sessionStorage.getItem("username"));
+ $(".User_Name").text(sessionStorage.getItem("username"));
 });
 
 

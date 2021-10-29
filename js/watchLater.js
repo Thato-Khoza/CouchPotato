@@ -179,6 +179,10 @@ $.getJSON(URL,function(result){
  $("#WatchLaterRight").click(function () { 
     $('.carouselbox.watchLater').scrollLeft($('.carouselbox.watchLater').scrollLeft() + 800);
  });
+ 
+ //output data
+ $(".accountText h6").text(sessionStorage.getItem("username"));
+ $(".User_Name").text(sessionStorage.getItem("username"));
 
  
 });     

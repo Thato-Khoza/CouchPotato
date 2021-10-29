@@ -238,7 +238,7 @@ footer img{
 .userDiv{
     background-color: #cbcbfd;
     width: 60%;
-    height:470px;
+    height:430px;
     position: fixed;
     top:0;
     margin:80px;
@@ -260,7 +260,7 @@ footer img{
     margin-bottom: 10px;
 }
 
-.User_Name,.User_Email{
+.User_Name{
 
     padding: 15px 11px;
     background-color: #ffffff;
@@ -273,7 +273,7 @@ footer img{
 .userDiv .button1{
     width: 140px;
     margin-left: 80px;
-    margin-top: 23px;
+    margin-top: 28px;
 }
 
 #closeUserInfo{
@@ -416,6 +416,10 @@ h6{
     .carouselbox{
         overflow-x: auto !important;
         scroll-behavior: smooth;  
+    }
+
+    body {
+        padding-bottom: 50px;
     }
   
 }

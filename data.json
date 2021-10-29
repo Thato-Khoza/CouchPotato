@@ -12,7 +12,7 @@
     },
     {
         "username": "Michael Scott",
-        "password": "Mypassword1", 
+        "password": "password", 
         "account": "suspended"
     },
     {
