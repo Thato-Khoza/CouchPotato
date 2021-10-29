@@ -102,7 +102,7 @@ $(function(){
               if(result.users[i].password === password){
                   
                   if(result.users[i].account === "active"){
-                      window.location.href = "../pages/index.html"; 
+                      window.location.href = "pages/landingPage.html"; 
                       sessionStorage.setItem("username", username)
                   }else {
                       $(".message").css("background-color", "orange")
