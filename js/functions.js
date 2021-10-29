@@ -27,15 +27,17 @@ $('.carouselbox').on('click', '.movieCard', function(){
     }
 });
 
-//add to watch later{
-  $('.carouselbox').on('click', '.movieCard', function(){
+//add to watch later
+// var watchLater = $(".moviecard");
+
+//   $('.carouselbox').on('click', '.movieCard', function(){
     
-    array.push((this).div)
-    localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
-    console.log(localStorage.getItem("my_Movies"))
+//     array.push((this).div)
+//     localStorage.setItem("my_Movies", JSON.stringify(array)); //store colors
+//     console.log(localStorage.getItem("my_Movies"))
     
 
-});
+// });
 
 //shows user info
   $('.nav-footer').on('click', '#promtUser', function(){
@@ -100,7 +102,7 @@ $(function(){
               if(result.users[i].password === password){
                   
                   if(result.users[i].account === "active"){
-                      window.location.href = "../pages/index.html"; //here
+                      window.location.href = "../pages/index.html"; 
                       sessionStorage.setItem("username", username)
                   }else {
                       $(".message").css("background-color", "orange")
@@ -147,32 +149,5 @@ $(function(){
 
 
 
-//sighUp slider
-//$(function(){
 
-  //  $(".btn").on("click", function(){
-    //    $(".panel").toggleClass("panel-slide");
-    //});
-
- //});
-
-
- //$(function(){
-
-   // $(".leftBtn").on("click" , function(){
-     //   $(".left").removeClass( "Appear" ).addClass( "disAppear") 
-       // $(".right").removeClass( "disAppear" ).addClass( "Appear")
-
-    //});
-    
-//});
-
-//$(function(){
-
-  //  $(".rightBtn").on("click" , function(){
-   //     $(".right").removeClass( "Appear" ).addClass( "disAppear") 
-     //   $(".left").removeClass( "disAppear" ).addClass( "Appear") ;
-
-    //});
-//}); 
 

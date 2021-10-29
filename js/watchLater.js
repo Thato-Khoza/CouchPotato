@@ -156,8 +156,17 @@ $.getJSON(URL,function(result){
     </div><!--movieCard-->")
 }
 } //for loop(movie card repetition)
+
 });
-} // end of api for loop
+
+
+
+
+
+
+} // end of api for loop 
+
+
 
     
 //on click button slider code

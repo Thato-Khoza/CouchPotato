@@ -26,6 +26,7 @@
         <!--CSS-->
         <link rel="stylesheet" href="../style/main.css">
         <link rel="stylesheet" href="../style/library.css">
+        
  
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
@@ -80,7 +81,9 @@
         
                <div class="col-md-12 col-sm-12 col-12 filters" >
                   <br/>
+                  
                   <div class= "selectBox">
+                    
                         <select id="ratingCheck">
                             <option>Rating</option>
                             <option>1 star</option>
@@ -89,19 +92,21 @@
                             <option>4 star</option>
                             <option>5 star</option>                              
                         </select>
+                        
                 </div><!--select box-->
                   
                 <div class= "selectBox">
                     <select id="year">
                         <option>Year</option>
-                        <option>1980s</option>
-                        <option>1990s</option>
-                        <option>2000s</option> 
-                        <option>2010s</option>
-                        <option>2020s</option>                              
+                        <option>2018</option> 
+                        <option>2019</option>
+                        <option>2020</option>    
+                        <option>2021</option>                           
                     </select>
                 </div><!--select box-->
+                <div class="login-btn" onclick="movieFilter()">Search Filter</div>
                </div><!--col-->
+               
             </div><!--row-->
  
            
@@ -109,7 +114,7 @@
             <!-- MOVIE GENRES -->
             <!-- COMEDY -->
             <div class="heading">
-                <h2>Animation</h2>
+                <h2 id="filterSearch">Animation</h2>
             </div>
             <div class = "carousel">
                 <div class="carouselbox animation" >
